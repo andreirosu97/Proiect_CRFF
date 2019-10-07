@@ -20,3 +20,40 @@ Creating executable: out/clang-debug//CRFF_Tik_Tok_dbg.exe
 16:35:05 **** Build of configuration release for project CRFF_Tik_Tok ****
 make MODE=release all 
 make: Nothing to be done for 'all'.
+17:02:59 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc1.cc
+txc1.cc:50:37: error: invalid suffix 's' on integer constant
+            scheduleAt(simTime() + 5s, msg);
+                                    ^
+1 error generated.
+make: *** [Makefile:104: out/clang-release//txc1.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+17:03:16 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc1.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+17:10:27 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc1.cc
+txc1.cc:50:13: error: use of undeclared identifier 'System'; did you mean 'system'?
+            System.out.println("Mesaj");
+            ^~~~~~
+            system
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\stdlib.h:78:12: note: 'system' declared here
+using std::system;
+           ^
+txc1.cc:50:19: error: member reference base type 'int (const char *) __attribute__((cdecl))' is not a structure or union
+            System.out.println("Mesaj");
+            ~~~~~~^~~~
+2 errors generated.
+make: *** [Makefile:104: out/clang-release//txc1.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+17:10:42 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc1.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+17:11:16 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc1.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe

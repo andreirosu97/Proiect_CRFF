@@ -40,5 +40,17 @@ void Txc1::handleMessage(cMessage *msg)
     // at the module. Here, we just send it to the other module, through
     // gate `out'. Because both `tic' and `toc' does the same, the message
     // will bounce between the two.
-    send(msg, "out"); // send out the message
+    if(strcmp("tic", getName()) == 0) { //Daca sunt nod tic primesc mesaj toc
+        if(msg->isSelfMessage())
+        {
+            send(msg, "out"); // send out the message
+        }
+        else
+        {
+
+            scheduleAt(simTime() + 50, msg);
+        }
+    }
+    else
+        send(msg, "out"); // send out the message
 }

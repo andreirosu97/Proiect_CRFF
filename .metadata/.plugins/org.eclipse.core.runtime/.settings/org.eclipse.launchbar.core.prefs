@@ -3,6 +3,6 @@ LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
 configDescList=org.eclipse.launchbar.core.descriptorType.default\:aloha - akaroa,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok
 eclipse.preferences.version=1
-org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok/activeLaunchMode=debug
+org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:aloha\ -\ akaroa/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:aloha\ -\ akaroa/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

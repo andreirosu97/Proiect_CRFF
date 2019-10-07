@@ -1,6 +1,7 @@
-16:35:05 **** Build of configuration release for project CRFF_Tik_Tok ****
+17:11:16 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
 make MODE=release all 
-make: Nothing to be done for 'all'.
+txc1.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
 
-16:35:05 Build Finished. 0 errors, 0 warnings. (took 495ms)
+17:11:19 Build Finished. 0 errors, 0 warnings. (took 2s.177ms)
 
