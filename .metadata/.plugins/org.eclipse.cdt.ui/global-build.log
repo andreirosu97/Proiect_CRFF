@@ -1,0 +1,19 @@
+15:05:41 **** Build of configuration release for project aloha ****
+make MODE=release all 
+Host.cc
+Server.cc
+Creating executable: out/clang-release//aloha.exe
+15:05:51 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:07:43 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:13:56 **** Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc1.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+15:14:42 **** Incremental Build of configuration debug for project CRFF_Tik_Tok ****
+make MODE=debug all 
+txc1.cc
+Creating executable: out/clang-debug//CRFF_Tik_Tok_dbg.exe

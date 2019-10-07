@@ -1,0 +1,7 @@
+15:14:42 **** Incremental Build of configuration debug for project CRFF_Tik_Tok ****
+make MODE=debug all 
+txc1.cc
+Creating executable: out/clang-debug//CRFF_Tik_Tok_dbg.exe
+
+15:14:44 Build Finished. 0 errors, 0 warnings. (took 2s.292ms)
+
