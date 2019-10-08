@@ -1,5 +1,9 @@
+[General]
+last-configname=Tictoc9
+last-runnumber=0
+
 [RunModeProfiles]
-run-playback-speed=0.33884415613920255
+run-playback-speed=100
 run-min-playback-speed=0.01
 run-max-playback-speed=100
 run-min-animation-speed=nan

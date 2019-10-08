@@ -1,3 +1,13 @@
+//
+// This file is part of an OMNeT++/OMNEST simulation example.
+//
+// Copyright (C) 2003 Ahmet Sekercioglu
+// Copyright (C) 2003-2015 Andras Varga
+//
+// This file is distributed WITHOUT ANY WARRANTY. See the file
+// `license' for details on this and other legal matters.
+//
+
 #include <string.h>
 #include <omnetpp.h>
 
@@ -30,26 +40,28 @@ void Txc1::initialize()
         // create and send first message on gate "out". "tictocMsg" is an
         // arbitrary string which will be the name of the message object.
         cMessage *msg = new cMessage("tictocMsg");
+        EV << "Sending initial message\n";
         send(msg, "out");
     }
 }
 
 void Txc1::handleMessage(cMessage *msg)
 {
+    EV << "Received message `" << msg->getName() << "', sending it out again\n";
     // The handleMessage() method is called whenever a message arrives
     // at the module. Here, we just send it to the other module, through
     // gate `out'. Because both `tic' and `toc' does the same, the message
     // will bounce between the two.
     if(strcmp("tic", getName()) == 0) { //Daca sunt nod tic primesc mesaj toc
-        if(msg->isSelfMessage())
-        {
-            send(msg, "out"); // send out the message
-        }
-        else
-        {
+            if(msg->isSelfMessage())
+            {
+                send(msg, "out"); // send out the message
+            }
+            else
+            {
 
-            scheduleAt(simTime() + 50, msg);
-        }
+                scheduleAt(simTime() + 50, msg);
+            }
     }
     else
         send(msg, "out"); // send out the message

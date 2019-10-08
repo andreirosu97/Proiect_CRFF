@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:ui="http://www.eclipse.org/ui/2010/UIModel/application/ui" xmi:id="_-RHusOj-Eem71dOwaGUtwQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_-RHusej-Eem71dOwaGUtwQ" bindingContexts="_-RIXo-j-Eem71dOwaGUtwQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc1.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc1.cc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/txc1.cc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.inifile.editor.editors.InifileEditor&quot; name=&quot;omnetpp.ini&quot; tooltip=&quot;CRFF_Tik_Tok/omnetpp.ini&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/omnetpp.ini&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc1.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc1.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc1.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;Server.cc&quot; tooltip=&quot;aloha/Server.cc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/aloha/Server.cc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc9.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc9.cc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/txc9.cc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc8.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc8.cc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/txc8.cc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc8.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc8.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc8.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc7.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc7.cc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/txc7.cc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc7.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc7.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc7.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc6.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc6.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc6.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc6.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc6.cc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/txc6.cc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc9.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc9.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc9.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc5.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc5.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc5.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc5.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc5.cc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/txc5.cc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.inifile.editor.editors.InifileEditor&quot; name=&quot;omnetpp.ini&quot; tooltip=&quot;CRFF_Tik_Tok/omnetpp.ini&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/omnetpp.ini&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc4.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc4.cc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/txc4.cc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc3.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc3.cc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/txc3.cc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc3.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc3.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc3.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc4.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc4.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc4.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc1.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc1.cc&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/txc1.cc&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc1.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc1.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc1.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc2.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc2.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc2.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.omnetpp.ned.editor.launcher&quot; name=&quot;tictoc0.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc0.ned&quot;>&#xD;&#xA;&lt;persistable path=&quot;/CRFF_Tik_Tok/tictoc0.ned&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_-RHusej-Eem71dOwaGUtwQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_-RHusuj-Eem71dOwaGUtwQ" x="130" y="130" width="1575" height="888">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_-RHusej-Eem71dOwaGUtwQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.ui.workbench" selectedElement="_-RHusuj-Eem71dOwaGUtwQ" x="173" y="81" width="1575" height="888">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -60,6 +60,7 @@
           <children xsi:type="basic:PartSashContainer" xmi:id="_-RHutej-Eem71dOwaGUtwQ" selectedElement="_-RHuvuj-Eem71dOwaGUtwQ" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_-RHutuj-Eem71dOwaGUtwQ" containerData="2500" selectedElement="_-RHut-j-Eem71dOwaGUtwQ">
               <children xsi:type="basic:PartStack" xmi:id="_-RHut-j-Eem71dOwaGUtwQ" elementId="left" containerData="5000" selectedElement="_-RHuuOj-Eem71dOwaGUtwQ">
+                <tags>noFocus</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_-RHuuOj-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_-RHv7uj-Eem71dOwaGUtwQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -85,8 +86,8 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_-RHuvuj-Eem71dOwaGUtwQ" containerData="7500" selectedElement="_-RHuwOj-Eem71dOwaGUtwQ">
-              <children xsi:type="advanced:Placeholder" xmi:id="_-RHuv-j-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_-RHv4-j-Eem71dOwaGUtwQ"/>
-              <children xsi:type="basic:PartStack" xmi:id="_-RHuwOj-Eem71dOwaGUtwQ" elementId="bottom" containerData="2500" selectedElement="_-RHuyOj-Eem71dOwaGUtwQ">
+              <children xsi:type="advanced:Placeholder" xmi:id="_-RHuv-j-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.editorss" containerData="7108" ref="_-RHv4-j-Eem71dOwaGUtwQ"/>
+              <children xsi:type="basic:PartStack" xmi:id="_-RHuwOj-Eem71dOwaGUtwQ" elementId="bottom" containerData="2892" selectedElement="_-RHuyOj-Eem71dOwaGUtwQ">
                 <children xsi:type="advanced:Placeholder" xmi:id="_-RHuwej-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.views.ProblemView" ref="_-RHwWej-Eem71dOwaGUtwQ" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -175,59 +176,65 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_-RHv4-j-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.editorss" selectedElement="_-RHv5Oj-Eem71dOwaGUtwQ">
-      <children xsi:type="basic:PartStack" xmi:id="_-RHv5Oj-Eem71dOwaGUtwQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_-RHv6uj-Eem71dOwaGUtwQ">
+      <children xsi:type="basic:PartStack" xmi:id="_-RHv5Oj-Eem71dOwaGUtwQ" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_ZVTJoOmiEemob8X6vnglug">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <tags>active</tags>
-        <children xsi:type="basic:Part" xmi:id="_-RHv5ej-Eem71dOwaGUtwQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="tictoc1.ned" iconURI="platform:/plugin/org.omnetpp.ned.editor/icons/nedfile.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.omnetpp.ned.editor&quot; name=&quot;tictoc1.ned&quot; partName=&quot;tictoc1.ned&quot; title=&quot;tictoc1.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc1.ned&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/tictoc1.ned&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_ZVTJoOmiEemob8X6vnglug" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="omnetpp.ini" iconURI="platform:/plugin/org.omnetpp.inifile.editor/icons/inifile.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.omnetpp.inifile.editor.editors.InifileEditor&quot; name=&quot;omnetpp.ini&quot; partName=&quot;omnetpp.ini&quot; title=&quot;omnetpp.ini&quot; tooltip=&quot;CRFF_Tik_Tok/omnetpp.ini&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/omnetpp.ini&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
-          <tags>org.omnetpp.ned.editor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_-RHv5uj-Eem71dOwaGUtwQ" elementId="org.omnetpp.ned.editor.graph">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.omnetpp.ned.editor.graph</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_-RHv5-j-Eem71dOwaGUtwQ" elementId="org.omnetpp.ned.editor.text">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:org.omnetpp.ned.editor.text</tags>
-            <tags>popup:.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_-RHv6Oj-Eem71dOwaGUtwQ" elementId="#TextRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#TextRulerContext</tags>
-            <tags>popup:.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_-RHv6ej-Eem71dOwaGUtwQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_-RHv6uj-Eem71dOwaGUtwQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="txc1.cc" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc1.cc&quot; partName=&quot;txc1.cc&quot; title=&quot;txc1.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc1.cc&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/txc1.cc&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1571&quot; selectionTopPixel=&quot;311&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+          <tags>org.omnetpp.inifile.editor.editors.InifileEditor</tags>
           <tags>removeOnHide</tags>
           <tags>active</tags>
           <tags>activeOnClose</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_-RHv6-j-Eem71dOwaGUtwQ" elementId="#CEditorContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_-RHv7Oj-Eem71dOwaGUtwQ" elementId="#CEditorRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#CEditorRulerContext</tags>
-            <tags>popup:org.eclipse.cdt.ui.editor.CEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_-RHv7ej-Eem71dOwaGUtwQ" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_-yk7EOmwEemob8X6vnglug" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="tictoc9.ned" iconURI="platform:/plugin/org.omnetpp.ned.editor/icons/nedfile.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.omnetpp.ned.editor&quot; name=&quot;tictoc9.ned&quot; partName=&quot;tictoc9.ned&quot; title=&quot;tictoc9.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc9.ned&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/tictoc9.ned&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.omnetpp.ned.editor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_AsCXEOmxEemob8X6vnglug" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="txc9.cc" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc9.cc&quot; partName=&quot;txc9.cc&quot; title=&quot;txc9.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc9.cc&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/txc9.cc&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2471&quot; selectionTopPixel=&quot;1976&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_6a4gEOnGEemob8X6vnglug" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="txc7.cc" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc7.cc&quot; partName=&quot;txc7.cc&quot; title=&quot;txc7.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc7.cc&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/txc7.cc&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;5&quot; selectionOffset=&quot;3706&quot; selectionTopPixel=&quot;1181&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_8n1f0OnGEemob8X6vnglug" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="txc6.cc" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc6.cc&quot; partName=&quot;txc6.cc&quot; title=&quot;txc6.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc6.cc&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/txc6.cc&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;0&quot; selectionTopPixel=&quot;495&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_9QRY0OnGEemob8X6vnglug" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="tictoc6.ned" iconURI="platform:/plugin/org.omnetpp.ned.editor/icons/nedfile.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.omnetpp.ned.editor&quot; name=&quot;tictoc6.ned&quot; partName=&quot;tictoc6.ned&quot; title=&quot;tictoc6.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc6.ned&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/tictoc6.ned&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.omnetpp.ned.editor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_-Rm6AOnGEemob8X6vnglug" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="tictoc7.ned" iconURI="platform:/plugin/org.omnetpp.ned.editor/icons/nedfile.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.omnetpp.ned.editor&quot; name=&quot;tictoc7.ned&quot; partName=&quot;tictoc7.ned&quot; title=&quot;tictoc7.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc7.ned&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/tictoc7.ned&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.omnetpp.ned.editor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_lMlrcOnIEemob8X6vnglug" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="tictoc8.ned" iconURI="platform:/plugin/org.omnetpp.ned.editor/icons/nedfile.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.omnetpp.ned.editor&quot; name=&quot;tictoc8.ned&quot; partName=&quot;tictoc8.ned&quot; title=&quot;tictoc8.ned&quot; tooltip=&quot;CRFF_Tik_Tok/tictoc8.ned&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/tictoc8.ned&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.omnetpp.ned.editor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_oMvpwOnIEemob8X6vnglug" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="txc8.cc" iconURI="platform:/plugin/org.eclipse.cdt.ui/icons/obj16/c_file_obj.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.cdt.ui.editor.CEditor&quot; name=&quot;txc8.cc&quot; partName=&quot;txc8.cc&quot; title=&quot;txc8.cc&quot; tooltip=&quot;CRFF_Tik_Tok/txc8.cc&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/CRFF_Tik_Tok/txc8.cc&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;24&quot; selectionOffset=&quot;2259&quot; selectionTopPixel=&quot;450&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.cdt.ui.editor.CEditor</tags>
+          <tags>removeOnHide</tags>
         </children>
       </children>
     </sharedElements>
@@ -274,7 +281,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_-RHwWej-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.views.ProblemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Problems" iconURI="platform:/plugin/org.eclipse.ui.ide/icons/full/eview16/problems_view.png" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewClass" value="org.eclipse.ui.internal.views.markers.ProblemsView"/>
       <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.ui.ide"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Errors&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;300&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view PRIMARY_SORT_FIELD=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot; categoryGroup=&quot;org.eclipse.ui.ide.severity&quot; markerContentGenerator=&quot;org.eclipse.ui.ide.problemsGenerator&quot; partName=&quot;Problems&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Errors&quot;/>&#xD;&#xA;&lt;category IMemento.internal.id=&quot;Infos&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;columnWidths org.eclipse.ui.ide.locationField=&quot;90&quot; org.eclipse.ui.ide.markerType=&quot;90&quot; org.eclipse.ui.ide.pathField=&quot;120&quot; org.eclipse.ui.ide.resourceField=&quot;90&quot; org.eclipse.ui.ide.severityAndDescriptionField=&quot;300&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.severityAndDescriptionField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.resourceField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.pathField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.locationField&quot;/>&#xD;&#xA;&lt;visible IMemento.internal.id=&quot;org.eclipse.ui.ide.markerType&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
       <menus xmi:id="_-RHwWuj-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.views.ProblemView">
@@ -378,7 +385,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-RIV7-j-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_6eep4OkGEemCxopE2U62ag" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_-RJAtej-Eem71dOwaGUtwQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_HsLzUOmhEemob8X6vnglug" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_-RJAtej-Eem71dOwaGUtwQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-RIV_ej-Eem71dOwaGUtwQ" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -397,7 +404,7 @@
       <children xsi:type="menu:ToolBar" xmi:id="_-RIWCuj-Eem71dOwaGUtwQ" elementId="org.eclipse.search.searchActionSet">
         <tags>Draggable</tags>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_-RIWD-j-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
+      <children xsi:type="menu:ToolBar" xmi:id="_-RIWD-j-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
         <tags>Draggable</tags>
         <children xsi:type="menu:HandledToolItem" xmi:id="_-RIWEOj-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.genericeditor.togglehighlight" visible="false" iconURI="platform:/plugin/org.eclipse.ui.genericeditor/icons/full/etool16/mark_occurrences.png" selected="true" type="Check" command="_-RJBAOj-Eem71dOwaGUtwQ">
           <persistedState key="IIdentifier" value="org.eclipse.ui.genericeditor/org.eclipse.ui.genericeditor.togglehighlight"/>
@@ -410,7 +417,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-RIWLuj-Eem71dOwaGUtwQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_6ehGIOkGEemCxopE2U62ag" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_-RJAO-j-Eem71dOwaGUtwQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_HsNogOmhEemob8X6vnglug" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_-RJAO-j-Eem71dOwaGUtwQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_-RIWP-j-Eem71dOwaGUtwQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

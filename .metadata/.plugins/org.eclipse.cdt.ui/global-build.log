@@ -57,3 +57,451 @@ Creating executable: out/clang-release//CRFF_Tik_Tok.exe
 make MODE=release all 
 txc1.cc
 Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+09:00:04 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:00:25 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:02:02 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc2.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+09:02:24 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+09:04:29 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+10:47:53 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc1.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+10:55:13 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc3.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Tik_Tok.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:95: out/clang-release//CRFF_Tik_Tok.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:55:37 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Tik_Tok.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:95: out/clang-release//CRFF_Tik_Tok.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:56:31 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+10:57:30 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc3.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Tik_Tok.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:95: out/clang-release//CRFF_Tik_Tok.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+10:57:44 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+10:58:31 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc3.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+11:06:33 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc4.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+out/clang-release//txc4.o:(.rdata+0x720): multiple definition of `typeinfo for Txc3'
+out/clang-release//txc3.o:(.rdata+0x740): first defined here
+out/clang-release//txc4.o:(.text+0xb0): multiple definition of `Txc3::initialize()'
+out/clang-release//txc3.o:(.text+0xb0): first defined here
+out/clang-release//txc4.o:(.text+0x210): multiple definition of `Txc3::handleMessage(omnetpp::cMessage*)'
+out/clang-release//txc3.o:(.text+0x200): first defined here
+out/clang-release//txc4.o:(.rdata+0x170): multiple definition of `vtable for Txc3'
+out/clang-release//txc3.o:(.rdata+0x190): first defined here
+out/clang-release//txc4.o:(.rdata+0x718): multiple definition of `typeinfo name for Txc3'
+out/clang-release//txc3.o:(.rdata+0x738): first defined here
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:95: out/clang-release//CRFF_Tik_Tok.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+11:06:51 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc4.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+11:16:29 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc5.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+11:25:29 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc6.cc
+txc7.cc
+txc8.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+11:26:11 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:29:34 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc6.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+11:30:53 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc6.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+12:41:33 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc7.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Tik_Tok.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:103: out/clang-release//CRFF_Tik_Tok.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:41:57 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc7.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Tik_Tok.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:103: out/clang-release//CRFF_Tik_Tok.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:42:19 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Tik_Tok.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:103: out/clang-release//CRFF_Tik_Tok.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:42:28 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+12:42:43 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+12:56:20 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc8.cc
+txc9.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+12:57:45 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+12:58:25 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:08:58 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc8.cc
+txc9.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+13:09:14 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:02:38 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:56:08 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc7.cc
+txc9.cc
+txc9.cc:61:12: error: use of undeclared identifier 'message'
+    delete message;
+           ^
+txc9.cc:79:20: error: use of undeclared identifier 'message'; did you mean 'messages'?
+        sendCopyOf(message[i]);
+                   ^~~~~~~
+                   messages
+txc9.cc:39:15: note: 'messages' declared here
+    cMessage *messages[3];
+              ^
+txc9.cc:88:24: error: use of undeclared identifier 'message'
+            sendCopyOf(message);
+                       ^
+txc9.cc:97:20: error: use of undeclared identifier 'message'
+            delete message;
+                   ^
+txc9.cc:99:13: error: use of undeclared identifier 'message'; did you mean 'messages'?
+            message = generateNewMessage();
+            ^~~~~~~
+            messages
+txc9.cc:39:15: note: 'messages' declared here
+    cMessage *messages[3];
+              ^
+txc9.cc:99:42: error: too few arguments to function call, single argument 'msgType' was not specified
+            message = generateNewMessage();
+                      ~~~~~~~~~~~~~~~~~~ ^
+txc9.cc:49:7: note: 'generateNewMessage' declared here
+      virtual cMessage *generateNewMessage(int msgType);
+      ^
+txc9.cc:100:24: error: use of undeclared identifier 'message'
+            sendCopyOf(message);
+                       ^
+txc9.cc:109:34: error: use of undeclared identifier 'msgname'
+    cMessage *msg = new cMessage(msgname);
+                                 ^
+txc9.cc:118:20: error: no viable overloaded '='
+    case C : event = new cMessage("event",C);
+             ~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cmessage.h:190:15: note: candidate function not viable: no known conversion from 'omnetpp::cMessage *' to 'const omnetpp::cMessage' for 1st argument; dereference the argument with *
+    cMessage& operator=(const cMessage& msg);
+              ^
+txc9.cc:119:19: error: no viable overloaded '='
+    case D: event = new cMessage("event",D);
+            ~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cmessage.h:190:15: note: candidate function not viable: no known conversion from 'omnetpp::cMessage *' to 'const omnetpp::cMessage' for 1st argument; dereference the argument with *
+    cMessage& operator=(const cMessage& msg);
+              ^
+txc9.cc:120:20: error: no viable overloaded '='
+    case ED: event = new cMessage("event",ED);
+             ~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cmessage.h:190:15: note: candidate function not viable: no known conversion from 'omnetpp::cMessage *' to 'const omnetpp::cMessage' for 1st argument; dereference the argument with *
+    cMessage& operator=(const cMessage& msg);
+              ^
+txc9.cc:121:21: error: no viable overloaded '='
+    default : event = new cMessage("event");
+              ~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cmessage.h:190:15: note: candidate function not viable: no known conversion from 'omnetpp::cMessage *' to 'const omnetpp::cMessage' for 1st argument; dereference the argument with *
+    cMessage& operator=(const cMessage& msg);
+              ^
+12 errors generated.
+make: *** [Makefile:113: out/clang-release//txc9.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:57:17 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc9.cc
+txc9.cc:61:12: error: use of undeclared identifier 'message'
+    delete message;
+           ^
+txc9.cc:79:20: error: use of undeclared identifier 'message'; did you mean 'messages'?
+        sendCopyOf(message[i]);
+                   ^~~~~~~
+                   messages
+txc9.cc:39:15: note: 'messages' declared here
+    cMessage *messages[3];
+              ^
+txc9.cc:88:24: error: use of undeclared identifier 'message'
+            sendCopyOf(message);
+                       ^
+txc9.cc:97:20: error: use of undeclared identifier 'message'
+            delete message;
+                   ^
+txc9.cc:99:13: error: use of undeclared identifier 'message'; did you mean 'messages'?
+            message = generateNewMessage();
+            ^~~~~~~
+            messages
+txc9.cc:39:15: note: 'messages' declared here
+    cMessage *messages[3];
+              ^
+txc9.cc:99:42: error: too few arguments to function call, single argument 'msgType' was not specified
+            message = generateNewMessage();
+                      ~~~~~~~~~~~~~~~~~~ ^
+txc9.cc:49:7: note: 'generateNewMessage' declared here
+      virtual cMessage *generateNewMessage(int msgType);
+      ^
+txc9.cc:100:24: error: use of undeclared identifier 'message'
+            sendCopyOf(message);
+                       ^
+txc9.cc:109:34: error: use of undeclared identifier 'msgname'
+    cMessage *msg = new cMessage(msgname);
+                                 ^
+txc9.cc:118:20: error: no viable overloaded '='
+    case C : event = new cMessage("event",C);
+             ~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cmessage.h:190:15: note: candidate function not viable: no known conversion from 'omnetpp::cMessage *' to 'const omnetpp::cMessage' for 1st argument; dereference the argument with *
+    cMessage& operator=(const cMessage& msg);
+              ^
+txc9.cc:119:43: error: no viable conversion from 'omnetpp::cMessage' to 'omnetpp::cMessage *'
+            scheduleAt(simTime() + delayC,event);
+                                          ^~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/csimplemodule.h:350:52: note: passing argument to parameter 'msg' here
+    virtual void scheduleAt(simtime_t t, cMessage *msg);
+                                                   ^
+txc9.cc:121:19: error: no viable overloaded '='
+    case D: event = new cMessage("event",D);
+            ~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cmessage.h:190:15: note: candidate function not viable: no known conversion from 'omnetpp::cMessage *' to 'const omnetpp::cMessage' for 1st argument; dereference the argument with *
+    cMessage& operator=(const cMessage& msg);
+              ^
+txc9.cc:122:43: error: no viable conversion from 'omnetpp::cMessage' to 'omnetpp::cMessage *'
+            scheduleAt(simTime() + delayD,event);
+                                          ^~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/csimplemodule.h:350:52: note: passing argument to parameter 'msg' here
+    virtual void scheduleAt(simtime_t t, cMessage *msg);
+                                                   ^
+txc9.cc:124:20: error: no viable overloaded '='
+    case ED: event = new cMessage("event",ED);
+             ~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cmessage.h:190:15: note: candidate function not viable: no known conversion from 'omnetpp::cMessage *' to 'const omnetpp::cMessage' for 1st argument; dereference the argument with *
+    cMessage& operator=(const cMessage& msg);
+              ^
+txc9.cc:125:44: error: no viable conversion from 'omnetpp::cMessage' to 'omnetpp::cMessage *'
+            scheduleAt(simTime() + delayED,event);
+                                           ^~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/csimplemodule.h:350:52: note: passing argument to parameter 'msg' here
+    virtual void scheduleAt(simtime_t t, cMessage *msg);
+                                                   ^
+14 errors generated.
+make: *** [Makefile:113: out/clang-release//txc9.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:58:04 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc9.cc
+txc9.cc:61:12: error: use of undeclared identifier 'message'
+    delete message;
+           ^
+txc9.cc:79:20: error: use of undeclared identifier 'message'; did you mean 'messages'?
+        sendCopyOf(message[i]);
+                   ^~~~~~~
+                   messages
+txc9.cc:39:15: note: 'messages' declared here
+    cMessage *messages[3];
+              ^
+txc9.cc:88:24: error: use of undeclared identifier 'message'
+            sendCopyOf(message);
+                       ^
+txc9.cc:97:20: error: use of undeclared identifier 'message'
+            delete message;
+                   ^
+txc9.cc:99:13: error: use of undeclared identifier 'message'; did you mean 'messages'?
+            message = generateNewMessage();
+            ^~~~~~~
+            messages
+txc9.cc:39:15: note: 'messages' declared here
+    cMessage *messages[3];
+              ^
+txc9.cc:99:42: error: too few arguments to function call, single argument 'msgType' was not specified
+            message = generateNewMessage();
+                      ~~~~~~~~~~~~~~~~~~ ^
+txc9.cc:49:7: note: 'generateNewMessage' declared here
+      virtual cMessage *generateNewMessage(int msgType);
+      ^
+txc9.cc:100:24: error: use of undeclared identifier 'message'
+            sendCopyOf(message);
+                       ^
+txc9.cc:109:34: error: use of undeclared identifier 'msgname'
+    cMessage *msg = new cMessage(msgname);
+                                 ^
+8 errors generated.
+make: *** [Makefile:113: out/clang-release//txc9.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:59:16 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc9.cc
+txc9.cc:60:5: error: cannot delete expression of type 'omnetpp::cMessage *[3]'
+    delete messages;
+    ^      ~~~~~~~~
+txc9.cc:82:24: error: use of undeclared identifier 'message'
+            sendCopyOf(message);
+                       ^
+txc9.cc:91:20: error: use of undeclared identifier 'message'
+            delete message;
+                   ^
+txc9.cc:93:13: error: use of undeclared identifier 'message'; did you mean 'messages'?
+            message = generateNewMessage();
+            ^~~~~~~
+            messages
+txc9.cc:39:15: note: 'messages' declared here
+    cMessage *messages[3];
+              ^
+txc9.cc:93:42: error: too few arguments to function call, single argument 'msgType' was not specified
+            message = generateNewMessage();
+                      ~~~~~~~~~~~~~~~~~~ ^
+txc9.cc:49:7: note: 'generateNewMessage' declared here
+      virtual cMessage *generateNewMessage(int msgType);
+      ^
+txc9.cc:94:24: error: use of undeclared identifier 'message'
+            sendCopyOf(message);
+                       ^
+txc9.cc:103:34: error: use of undeclared identifier 'msgname'
+    cMessage *msg = new cMessage(msgname);
+                                 ^
+7 errors generated.
+make: *** [Makefile:113: out/clang-release//txc9.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:59:43 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc9.cc
+txc9.cc:83:24: error: use of undeclared identifier 'message'
+            sendCopyOf(message);
+                       ^
+txc9.cc:92:20: error: use of undeclared identifier 'message'
+            delete message;
+                   ^
+txc9.cc:94:13: error: use of undeclared identifier 'message'; did you mean 'messages'?
+            message = generateNewMessage();
+            ^~~~~~~
+            messages
+txc9.cc:39:15: note: 'messages' declared here
+    cMessage *messages[3];
+              ^
+txc9.cc:94:42: error: too few arguments to function call, single argument 'msgType' was not specified
+            message = generateNewMessage();
+                      ~~~~~~~~~~~~~~~~~~ ^
+txc9.cc:49:7: note: 'generateNewMessage' declared here
+      virtual cMessage *generateNewMessage(int msgType);
+      ^
+txc9.cc:95:24: error: use of undeclared identifier 'message'
+            sendCopyOf(message);
+                       ^
+txc9.cc:104:34: error: use of undeclared identifier 'msgname'
+    cMessage *msg = new cMessage(msgname);
+                                 ^
+6 errors generated.
+make: *** [Makefile:113: out/clang-release//txc9.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+16:01:25 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc9.cc
+txc9.cc:85:26: error: use of undeclared identifier 'timeout'
+    scheduleAt(simTime()+timeout, timeoutEvent);
+                         ^
+txc9.cc:85:35: error: use of undeclared identifier 'timeoutEvent'
+    scheduleAt(simTime()+timeout, timeoutEvent);
+                                  ^
+txc9.cc:92:34: error: use of undeclared identifier 'msgname'
+    cMessage *msg = new cMessage(msgname);
+                                 ^
+3 errors generated.
+make: *** [Makefile:113: out/clang-release//txc9.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+16:09:32 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc9.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+out/clang-release//txc9.o:(.text+0xa67): undefined reference to `Tic9::Tic9()'
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:104: out/clang-release//CRFF_Tik_Tok.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+16:09:50 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc9.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+16:10:19 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:11:14 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:12:44 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc9.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+16:14:12 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc9.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+16:17:27 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:25:41 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
