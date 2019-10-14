@@ -1,2 +1,5 @@
 /.metadata/
 /inet4/
+!/inet4/src/*.ned
+!/inet4/src/*.ini
+!/inet4/src/*.cc
