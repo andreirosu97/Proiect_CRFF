@@ -1905,3 +1905,9 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1476)
 !SUBENTRY 1 org.eclipse.core.expressions 4 201 2019-10-14 14:28:11.452
 !MESSAGE No property tester contributes a property org.eclipse.core.resources.projectNature to type class org.eclipse.cdt.internal.core.model.SourceRoot
+
+!ENTRY org.eclipse.core.jobs 2 2 2019-10-14 21:09:00.064
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.omnetpp.ide.installer.InstallSimulationModelsDialog$6
+
+!ENTRY org.eclipse.core.jobs 2 2 2019-10-14 21:09:00.071
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.omnetpp.ide.installer.InstallSimulationModelsDialog$6
