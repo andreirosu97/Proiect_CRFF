@@ -1,5 +1,8 @@
 /.metadata/
-/inet4/
-!/inet4/src/*.ned
-!/inet4/src/*.ini
-!/inet4/src/*.cc
+/inet4/*
+/inet4/src/inet/
+/inet4/src/results/
+/inet4/src/libINET_dbg.dll
+!/inet4/src/
+
+
