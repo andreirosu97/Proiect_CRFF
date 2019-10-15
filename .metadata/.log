@@ -1911,3 +1911,22 @@ org.eclipse.core.runtime.CoreException: No property tester contributes a propert
 
 !ENTRY org.eclipse.core.jobs 2 2 2019-10-14 21:09:00.071
 !MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.omnetpp.ide.installer.InstallSimulationModelsDialog$6
+!SESSION 2019-10-15 09:44:11.224 -----------------------------------------------
+eclipse.buildId=5.5.1.190613-08ba16f914
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-15 09:45:05.798
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.omnetpp.main 1 0 2019-10-15 09:45:15.735
+!MESSAGE OMNeT++ IDE 5.5.1.190613-08ba16f914 started.
+
+!ENTRY org.omnetpp.launch 4 -1073741819 2019-10-15 10:46:03.696
+!MESSAGE Finished with Error
+!STACK 0
+java.lang.RuntimeException: 
+	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
