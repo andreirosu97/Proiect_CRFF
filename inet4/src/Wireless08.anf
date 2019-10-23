@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scave:Analysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:scave="http://www.omnetpp.org/omnetpp/scave">
+  <inputs>
+    <inputs name="/inet4/src/results/Wireless08-*.vec"/>
+    <inputs name="/inet4/src/results/Wireless08-*.sca"/>
+  </inputs>
+  <datasets>
+    <datasets name="new">
+      <items xsi:type="scave:Add" filterPattern=""/>
+      <items xsi:type="scave:LineChart" name="" lineNameFormat="">
+        <filters xsi:type="scave:Select" type="VECTOR"/>
+        <properties name="Legend.Display" value="true"/>
+        <properties name="Symbols.Type" value="None"/>
+        <properties name="Line.Type" value="Linear"/>
+      </items>
+    </datasets>
+    <datasets name="residualEnergyCapacity:vector">
+      <items xsi:type="scave:Add" filterPattern="module(WirelessB.hostA.energyStorage) AND name(residualEnergyCapacity:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="module(WirelessB.hostR1.energyStorage) AND name(residualEnergyCapacity:vector)" type="VECTOR"/>
+      <items xsi:type="scave:Add" filterPattern="module(WirelessB.hostB.energyStorage) AND name(residualEnergyCapacity:vector)" type="VECTOR"/>
+      <items xsi:type="scave:LineChart" name="residualEnergyCapacity:vector" lineNameFormat="">
+        <properties name="Legend.Display" value="true"/>
+      </items>
+    </datasets>
+  </datasets>
+  <chartSheets>
+    <chartSheets name="default" charts="//@datasets/@datasets.0/@items.1"/>
+  </chartSheets>
+</scave:Analysis>

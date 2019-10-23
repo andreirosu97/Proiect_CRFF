@@ -1930,3 +1930,30 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 java.lang.RuntimeException: 
 	at org.omnetpp.launch.SimulationLauncherJob.run(SimulationLauncherJob.java:153)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2019-10-21 10:19:20.238 -----------------------------------------------
+eclipse.buildId=5.5.1.190613-08ba16f914
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-21 11:17:19.452
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.omnetpp.main 1 0 2019-10-21 11:17:26.929
+!MESSAGE OMNeT++ IDE 5.5.1.190613-08ba16f914 started.
+!SESSION 2019-10-23 11:11:37.838 -----------------------------------------------
+eclipse.buildId=5.5.1.190613-08ba16f914
+java.version=1.8.0_102
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.egit.core 1 0 2019-10-23 11:13:30.076
+!MESSAGE Using Apache MINA sshd as ssh client.
+
+!ENTRY org.omnetpp.main 1 0 2019-10-23 11:13:36.106
+!MESSAGE OMNeT++ IDE 5.5.1.190613-08ba16f914 started.
+
+!ENTRY org.omnetpp.scave 2 0 2019-10-23 11:40:05.276
+!MESSAGE No Scave editor state was saved for file: C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\CRFF_PROIECT_ROSU_STELEAC_2\inet4\src\Wireless08.anf.
