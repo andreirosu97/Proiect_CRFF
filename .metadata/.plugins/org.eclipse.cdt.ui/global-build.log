@@ -4264,3 +4264,113 @@ clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,
 Building...
 make[1]: Nothing to be done for 'all-pch'.
 make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+12:06:46 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+12:10:34 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+12:13:02 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+12:14:38 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+12:15:01 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+12:15:25 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+12:16:20 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+12:20:40 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+12:24:42 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+12:27:32 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j4 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
