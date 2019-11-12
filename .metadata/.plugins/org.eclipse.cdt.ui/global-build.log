@@ -6535,3 +6535,42 @@ clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,
 Building...
 make[1]: Nothing to be done for 'all-pch'.
 make[1]: Leaving directory '/c/Users/andrei.rosu/Desktop/Stuff/2.Personal/CRFF_PROIECT_ROSU_STELEAC_2/inet4/src'
+16:26:31 **** Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Project.exe
+16:29:45 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+PC.cc
+PC.cc:21:6: error: use of undeclared identifier 'Txc15'
+void Txc15::initialize()
+     ^
+PC.cc:26:6: error: use of undeclared identifier 'Txc15'
+void Txc15::handleMessage(cMessage *msg)
+     ^
+2 errors generated.
+make: *** [Makefile:104: out/clang-release//PC.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+16:29:59 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+PC.cc
+PC.cc:28:27: error: use of undeclared identifier 'n'
+    int k = intuniform(0, n-1);
+                          ^
+1 error generated.
+make: *** [Makefile:104: out/clang-release//PC.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+16:30:16 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+PC.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:33:14 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+PC.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:33:41 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+PC.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:34:36 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
