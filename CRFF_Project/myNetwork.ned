@@ -12,27 +12,42 @@
 // You should have received a copy of the GNU Lesser General Public License
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 //
+simple File
+{
+	parameters:
+	    string name;		// file name	
+	    int size @unit(b);  // file size in bits
+}
 
-simple Host
+module Host
+{
+   parameters:
+        double txRate @unit(bps);           // transmission rate
+        int maxNumFiles = default(0);		// the maximum ammout of files a host can store
+        double x @unit(m);                  // the x coordinate of the host
+        double y @unit(m);                  // the y coordinate of the host
+        @display("i=device/pc_s");
+        
+    submodules:
+        files[maxNumFiles] : File;
+}
+
+simple Server
 {
     parameters:
-        @display("i=block/routing");
+        @display("i=device/antennatower_l");
+        double x @unit(m); // the x coordinate of the server
+        double y @unit(m); // the y coordinate of the server
     gates:
-        inout gate[];
+        input in @directIn;
 }
 
 network MyNetwork
 {
-    types:
-        channel Channel extends ned.DelayChannel {
-            delay = 100ms;
-        }
+        parameters:
+        int numHosts;  // number of hosts
+        @display("bgi=background/streetmap,s;bgb=1000,1000");
     submodules:
-        clients[6]: Host;
-    connections:
-        clients[0].gate++ <--> Channel <--> clients[1].gate++;
-        clients[1].gate++ <--> Channel <--> clients[2].gate++;
-        clients[1].gate++ <--> Channel <--> clients[4].gate++;
-        clients[3].gate++ <--> Channel <--> clients[4].gate++;
-        clients[4].gate++ <--> Channel <--> clients[5].gate++;
+        server: Server; // The internet provider antenna
+        host[numHosts]: Host;
 }

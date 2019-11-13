@@ -10,8 +10,17 @@ using namespace omnetpp;
  */
 class Host : public cSimpleModule
 {
+private:
+    cModule *server;
 
-  protected:
+    // speed of light in m/s
+    const double propagationSpeed = 299792458.0;
+    simtime_t radioDelay;
+    double txRate;
+    cPar *pkLenBits;
+    enum { IDLE = 0, TRANSMIT = 1 } state;
+
+protected:
     virtual void initialize() override;
     virtual void handleMessage(cMessage *msg) override;
 };
@@ -20,18 +29,27 @@ Define_Module(Host);
 
 void Host::initialize()
 {
+    server = getModuleByPath("server");
+    state = IDLE;
+
+    double x = par("x").doubleValue();
+    double y = par("y").doubleValue();
+
+    double serverX = server->par("x").doubleValue();
+    double serverY = server->par("y").doubleValue();
+    double dist = std::sqrt((x-serverX) * (x-serverX) + (y-serverY) * (y-serverY));
+    radioDelay = dist / propagationSpeed;
+
     if(getIndex() == 0)
     {
-        cMessage *msg = new cMessage("file");
-        send(msg, "gate$o", 0);
+        cMessage *msg = new cMessage("Request file");
+        sendDirect(msg, radioDelay, 0, server->gate("in"));
     }
 }
 
 void Host::handleMessage(cMessage *msg)
 {
-    int n = gateSize("gate");
-    int k = intuniform(0, n-1);
-    send(msg, "gate$o", k);
+    EV << "Mesage : " << msg->getName();
 }
 
 
