@@ -1,0 +1,50 @@
+file 1428 1571903801                                            
+version 2
+run Tictoc18-0-20191024-11:56:19-2504
+attr configname Tictoc18
+attr datetime 20191024-11:56:19
+attr experiment Tictoc18
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network Tictoc18
+attr processid 2504
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 0 Tictoc18.tic[5] hopCount:vector ETV
+attr interpolationmode none
+attr source arrival
+attr title "hop count, vector"
+0	1141 52 18 108 1.7 10.7 4 1 29 49 1135
+vector 1 Tictoc18.tic[0] hopCount:vector ETV
+attr interpolationmode none
+attr source arrival
+attr title "hop count, vector"
+1	1193 70 29 189 2.8 18.8 5 2 31 61 1231
+vector 2 Tictoc18.tic[3] hopCount:vector ETV
+attr interpolationmode none
+attr source arrival
+attr title "hop count, vector"
+2	1263 27 74 180 7.3 17.9 2 1 45 46 2026
+vector 3 Tictoc18.tic[4] hopCount:vector ETV
+attr interpolationmode none
+attr source arrival
+attr title "hop count, vector"
+3	1290 65 77 179 7.6 17.8 5 1 19 26 380
+vector 4 Tictoc18.tic[1] hopCount:vector ETV
+attr interpolationmode none
+attr source arrival
+attr title "hop count, vector"
+4	1355 28 140 160 13.9 15.9 2 1 1 2 2
+4	1397 14 190 190 18.9 18.9 1 1 1 1 1
+vector 5 Tictoc18.tic[2] hopCount:vector ETV
+attr interpolationmode none
+attr source arrival
+attr title "hop count, vector"
+5	1383 14 145 145 14.4 14.4 1 4 4 4 16
+5	1411 17 203 203 20.2 20.2 1 13 13 13 169

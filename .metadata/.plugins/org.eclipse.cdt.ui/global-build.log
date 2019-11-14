@@ -6784,3 +6784,754 @@ make: Nothing to be done for 'all'.
 15:07:26 **** Incremental Build of configuration release for project aloha ****
 make MODE=release all 
 make: Nothing to be done for 'all'.
+11:18:14 **** Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+txc1.cc
+txc10.cc
+txc11.cc
+txc12.cc
+txc13.cc
+txc14.cc
+txc14.cc:32:5: warning: 'cLongHistogram' is deprecated [-Wdeprecated-declarations]
+    cLongHistogram hopCountStats;
+    ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/clegacyhistogram.h:355:7: note: 'cLongHistogram' has been explicitly marked deprecated here
+class _OPPDEPRECATED SIM_API cLongHistogram : public cLegacyHistogram
+      ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/platdep/platdefs.h:58:39: note: expanded from macro '_OPPDEPRECATED'
+#  define _OPPDEPRECATED __attribute((__deprecated__))
+                                      ^
+txc14.cc:128:11: warning: 'size' is deprecated [-Wdeprecated-declarations]
+  int n = size();
+          ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cmodule.h:594:5: note: 'size' has been explicitly marked deprecated here
+    _OPPDEPRECATED int size() const  {return getVectorSize();}
+    ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/platdep/platdefs.h:58:39: note: expanded from macro '_OPPDEPRECATED'
+#  define _OPPDEPRECATED __attribute((__deprecated__))
+                                      ^
+2 warnings generated.
+txc15.cc
+txc16.cc
+txc16.cc:23:5: warning: 'cLongHistogram' is deprecated [-Wdeprecated-declarations]
+    cLongHistogram hopCountStats;
+    ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/clegacyhistogram.h:355:7: note: 'cLongHistogram' has been explicitly marked deprecated here
+class _OPPDEPRECATED SIM_API cLongHistogram : public cLegacyHistogram
+      ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/platdep/platdefs.h:58:39: note: expanded from macro '_OPPDEPRECATED'
+#  define _OPPDEPRECATED __attribute((__deprecated__))
+                                      ^
+1 warning generated.
+txc17.cc
+txc18.cc
+txc19.cc
+txc2.cc
+txc3.cc
+txc4.cc
+txc5.cc
+txc6.cc
+txc7.cc
+txc8.cc
+txc9.cc
+tictoc13_m.cc
+tictoc14_m.cc
+Creating executable: out/clang-release//CRFF_Tik_Tok.exe
+11:28:45 **** Build of configuration release for project inet4 ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+Creating shared library: ../out/clang-release/src/libINET.dll
+make[1]: Leaving directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+11:29:58 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+12:04:42 **** Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+12:12:27 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+13:01:55 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+13:02:23 **** Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+file_m.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+13:08:29 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:09:06 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Project.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:09:11 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Project.exe
+13:16:36 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:14:5: error: unknown type name 'string'; did you mean 'std::string'?
+    string name;        // file name
+    ^~~~~~
+    std::string
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/stringfwd.h:74:33: note: 'std::string' declared here
+  typedef basic_string<char>    string;   
+                                ^
+FIle.cc:21:5: error: unknown type name 'string'; did you mean 'std::string'?
+    string getName();
+    ^~~~~~
+    std::string
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/stringfwd.h:74:33: note: 'std::string' declared here
+  typedef basic_string<char>    string;   
+                                ^
+FIle.cc:29:10: error: use of overloaded operator '=' is ambiguous (with operand types 'std::string' (aka 'basic_string<char>') and 'omnetpp::cPar')
+    name = par("name");
+    ~~~~ ^ ~~~~~~~~~~~
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:695:7: note: candidate function
+      operator=(basic_string&& __str)
+      ^
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:627:7: note: candidate function
+      operator=(const basic_string& __str)
+      ^
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:666:7: note: candidate function
+      operator=(const _CharT* __s)
+      ^
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:677:7: note: candidate function
+      operator=(_CharT __c)
+      ^
+FIle.cc:38:1: error: unknown type name 'string'; did you mean 'std::string'?
+string File::getName() {
+^~~~~~
+std::string
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/stringfwd.h:74:33: note: 'std::string' declared here
+  typedef basic_string<char>    string;   
+                                ^
+4 errors generated.
+make: *** [Makefile:105: out/clang-release//FIle.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:16:59 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:30:10: error: use of overloaded operator '=' is ambiguous (with operand types 'std::__cxx11::string' (aka 'basic_string<char>') and 'omnetpp::cPar')
+    name = par("name");
+    ~~~~ ^ ~~~~~~~~~~~
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:695:7: note: candidate function
+      operator=(basic_string&& __str)
+      ^
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:627:7: note: candidate function
+      operator=(const basic_string& __str)
+      ^
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:666:7: note: candidate function
+      operator=(const _CharT* __s)
+      ^
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:677:7: note: candidate function
+      operator=(_CharT __c)
+      ^
+1 error generated.
+make: *** [Makefile:105: out/clang-release//FIle.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:18:26 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:12:7: error: deleted function '~File' cannot override a non-deleted function
+class File : public cSimpleModule
+      ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/csimplemodule.h:128:13: note: overridden virtual function is here
+    virtual ~cSimpleModule();
+            ^
+FIle.cc:15:10: note: destructor of 'File' is implicitly deleted because field 'name' has an inaccessible destructor
+    cPar name;        // file name
+         ^
+FIle.cc:26:15: error: call to implicitly-deleted default constructor of 'File'
+Define_Module(File);
+              ^
+FIle.cc:15:10: note: default constructor of 'File' is implicitly deleted because field 'name' has an inaccessible default constructor
+    cPar name;        // file name
+         ^
+FIle.cc:30:10: error: expected unqualified-id
+    cPar = &par("name");
+         ^
+FIle.cc:40:16: error: member reference type 'omnetpp::cPar' is not a pointer; did you mean to use '.'?
+    return name->stringValue();
+           ~~~~^~
+               .
+4 errors generated.
+make: *** [Makefile:105: out/clang-release//FIle.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:20:19 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:12:7: error: deleted function '~File' cannot override a non-deleted function
+class File : public cSimpleModule
+      ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/csimplemodule.h:128:13: note: overridden virtual function is here
+    virtual ~cSimpleModule();
+            ^
+FIle.cc:15:10: note: destructor of 'File' is implicitly deleted because field 'name' has an inaccessible destructor
+    cPar name;        // file name
+         ^
+FIle.cc:26:15: error: call to implicitly-deleted default constructor of 'File'
+Define_Module(File);
+              ^
+FIle.cc:15:10: note: default constructor of 'File' is implicitly deleted because field 'name' has an inaccessible default constructor
+    cPar name;        // file name
+         ^
+FIle.cc:30:10: error: expected unqualified-id
+    cPar = &par("name");
+         ^
+FIle.cc:40:16: error: member reference type 'omnetpp::cPar' is not a pointer; did you mean to use '.'?
+    return name->stdstringValue();
+           ~~~~^~
+               .
+4 errors generated.
+make: *** [Makefile:105: out/clang-release//FIle.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:20:24 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:12:7: error: deleted function '~File' cannot override a non-deleted function
+class File : public cSimpleModule
+      ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/csimplemodule.h:128:13: note: overridden virtual function is here
+    virtual ~cSimpleModule();
+            ^
+FIle.cc:15:10: note: destructor of 'File' is implicitly deleted because field 'name' has an inaccessible destructor
+    cPar name;        // file name
+         ^
+FIle.cc:26:15: error: call to implicitly-deleted default constructor of 'File'
+Define_Module(File);
+              ^
+FIle.cc:15:10: note: default constructor of 'File' is implicitly deleted because field 'name' has an inaccessible default constructor
+    cPar name;        // file name
+         ^
+FIle.cc:30:10: error: expected unqualified-id
+    cPar = &par("name");
+         ^
+FIle.cc:40:16: error: member reference type 'omnetpp::cPar' is not a pointer; did you mean to use '.'?
+    return name->stdstringValue();
+           ~~~~^~
+               .
+4 errors generated.
+make: *** [Makefile:105: out/clang-release//FIle.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:20:25 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:20:26 **** Build of configuration release for project aloha ****
+make MODE=release all 
+Host.cc
+Server.cc
+Creating executable: out/clang-release//aloha.exe
+13:20:31 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+13:20:46 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:12:7: error: deleted function '~File' cannot override a non-deleted function
+class File : public cSimpleModule
+      ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/csimplemodule.h:128:13: note: overridden virtual function is here
+    virtual ~cSimpleModule();
+            ^
+FIle.cc:15:10: note: destructor of 'File' is implicitly deleted because field 'name' has an inaccessible destructor
+    cPar name;        // file name
+         ^
+FIle.cc:26:15: error: call to implicitly-deleted default constructor of 'File'
+Define_Module(File);
+              ^
+FIle.cc:15:10: note: default constructor of 'File' is implicitly deleted because field 'name' has an inaccessible default constructor
+    cPar name;        // file name
+         ^
+FIle.cc:30:10: error: expected unqualified-id
+    cPar = &par("name");
+         ^
+FIle.cc:40:16: error: member reference type 'omnetpp::cPar' is not a pointer; did you mean to use '.'?
+    return name->stdstringValue();
+           ~~~~^~
+               .
+4 errors generated.
+make: *** [Makefile:105: out/clang-release//FIle.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:20:48 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:20:48 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:20:49 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+13:20:58 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:30:10: error: expected unqualified-id
+    cPar = &par("name");
+         ^
+1 error generated.
+make: *** [Makefile:105: out/clang-release//FIle.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:20:59 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:21:00 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:21:01 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+13:21:18 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:30:10: error: expected unqualified-id
+    cPar = &par("name");
+         ^
+1 error generated.
+make: *** [Makefile:105: out/clang-release//FIle.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:21:52 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:30:12: error: assigning to 'omnetpp::cPar *' from incompatible type 'omnetpp::cPar'; take the address with &
+    name = par("name");
+           ^~~~~~~~~~~
+           &
+1 error generated.
+make: *** [Makefile:105: out/clang-release//FIle.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+13:22:00 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+13:24:34 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:25:22 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:28:24 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:34:13 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:34:38 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:35:10 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:35:26 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:36:17 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+13:38:31 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:18:09 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:19:01 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:19:31 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:19:49 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:20:21 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:20:44 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:23:07 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:23:48 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:25:48 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:26:25 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:28:38 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:33:33: warning: adding 'int' to a string does not append to the string [-Wstring-plus-int]
+    name->setStringValue("file" + seqNum);
+                         ~~~~~~~^~~~~~~~
+FIle.cc:33:33: note: use array indexing to silence this warning
+    name->setStringValue("file" + seqNum);
+                                ^
+                         &      [       ]
+1 warning generated.
+Creating executable: out/clang-release//CRFF_Project.exe
+15:30:09 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+FIle.cc:33:40: error: no member named 'toString' in namespace 'std'; did you mean 'to_string'?
+    name->setStringValue("file" + std::toString(seqNum));
+                                  ~~~~~^~~~~~~~
+                                       to_string
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6212:3: note: 'to_string' declared here
+  to_string(int __val)
+  ^
+1 error generated.
+make: *** [Makefile:105: out/clang-release//FIle.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:30:22 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+FIle.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+15:31:10 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:31:37 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:33:54 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+File.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+15:35:17 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+File.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Project.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:35:25 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Project.exe
+15:36:47 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+File.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Project.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:37:03 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Project.exe
+15:37:18 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+File.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+15:37:26 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+File.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+15:47:07 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Server.cc
+Server.cc:8:23: error: expected class name
+class Server : public cSimpleModule
+                      ^
+Server.cc:13:5: error: unknown type name 'cMessage'
+    cMessage *endRxEvent;
+    ^
+Server.cc:22:18: error: 'initialize' marked 'override' but does not override any member functions
+    virtual void initialize() override;
+                 ^
+Server.cc:23:32: error: unknown type name 'cMessage'
+    virtual void handleMessage(cMessage *msg) override;
+                               ^
+Server.cc:27:1: error: unknown type name 'Define_Module'
+Define_Module(Server);
+^
+Server.cc:41:22: error: unknown type name 'cMessage'
+    endRxEvent = new cMessage("end-reception");
+                     ^
+Server.cc:44:5: error: use of undeclared identifier 'gate'
+    gate("in")->setDeliverOnReceptionStart(true);
+    ^
+Server.cc:47:28: error: unknown type name 'cMessage'
+void Server::handleMessage(cMessage *msg)
+                           ^
+Server.cc:49:5: error: use of undeclared identifier 'EV'
+    EV << "AM PRIMIT MESAJ\n";
+    ^
+9 errors generated.
+make: *** [Makefile:105: out/clang-release//Server.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:47:44 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+out/clang-release//Host.o:(.text+0x40): undefined reference to `typeinfo for Host'
+out/clang-release//Host.o:(.text+0x427): undefined reference to `Host::Host()'
+out/clang-release//Host.o:(.text+0x45f): undefined reference to `typeinfo for Host'
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:48:02 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Project.exe
+out/clang-release//Host.o:(.text+0x40): undefined reference to `typeinfo for Host'
+out/clang-release//Host.o:(.text+0x427): undefined reference to `Host::Host()'
+out/clang-release//Host.o:(.text+0x45f): undefined reference to `typeinfo for Host'
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:49:45 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+File.cc
+Host.cc
+Server.cc
+file_m.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+out/clang-release//Host.o:(.text+0x40): undefined reference to `typeinfo for Host'
+out/clang-release//Host.o:(.text+0x427): undefined reference to `Host::Host()'
+out/clang-release//Host.o:(.text+0x45f): undefined reference to `typeinfo for Host'
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+15:49:52 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:49:53 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:49:55 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+15:53:50 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+15:53:53 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:53:53 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:53:54 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+15:55:12 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:55:48 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:56:30 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+15:56:57 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:02:13 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:02:44 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:03:21 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:04:52 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:15:03 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:15:04 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:15:04 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:15:05 **** Incremental Build of configuration release for project inet4 ****
+make MODE=release -j8 all 
+cd src && /usr/bin/make
+make[1]: Entering directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+*** COMPILING with:
+clang++ -c -std=c++11 -O3 -DNDEBUG=1 -MMD -MP -MF .d    -isystem /usr/include -isystem /mingw64/include -Wno-deprecated-register -Wno-unused-function -fno-stack-protector  -DXMLPARSER=libxml -DPREFER_QTENV -DWITH_QTENV -DWITH_PARSIM -DWITH_NETBUILDER -DWITH_OSG -DWITH_OSGEARTH -DINET_EXPORT -Wno-overloaded-virtual -include inet/common/precompiled_release.h  -DINET_EXPORT -I. -IC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include
+*** LINKING with:
+clang++ -shared  -o ../out/clang-release/src/libINET.dll -Wl,--no-as-needed -Wl,--whole-archive  -lws2_32 -Wl,--no-whole-archive -loppenvir -loppsim -lstdc++  -losg -losgText -losgDB -losgGA -losgViewer -losgUtil -lOpenThreads  -losgEarth -losgEarthUtil  -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib -Wl,-rpath,C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/tools/win64/lib -Wl,-rpath,. -L/usr/bin -L/usr/lib -L/mingw64/lib -LC:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/lib
+Building...
+make[1]: Nothing to be done for 'all-pch'.
+make[1]: Leaving directory '/c/Users/Andrei/Desktop/Proiect_CRFF/inet4/src'
+16:15:20 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:15:46 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:16:28 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:17:44 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:17:57 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:18:41 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:19:16 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:20:24 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:24:03 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:25:26 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:27:01 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:27:53 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:29:21 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:29:53 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:30:49 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:31:39 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:32:34 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:33:19 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:33:53 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:34:59 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:39:31 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:49:17: error: invalid suffix 's' on integer constant
+    scheduleAt(5s,mesaj);
+                ^
+1 error generated.
+make: *** [Makefile:105: out/clang-release//Host.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+16:40:51 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:16:24: error: invalid suffix 's' on integer constant
+    simtime_t delay = 5s;
+                       ^
+1 error generated.
+make: *** [Makefile:105: out/clang-release//Host.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+16:41:29 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:50:00 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe

@@ -14,22 +14,21 @@
 //
 simple File
 {
-	parameters:
-	    string name;		// file name	
-	    int size @unit(b);  // file size in bits
+    parameters:
+        int seqNumber = default(intuniform(0, 10));
+        volatile string name = default("file");		// file name	
+        volatile int size @unit(b) = default(0b);  // file size in bits
 }
 
-module Host
+simple Host
 {
-   parameters:
+    parameters:
         double txRate @unit(bps);           // transmission rate
-        int maxNumFiles = default(0);		// the maximum ammout of files a host can store
         double x @unit(m);                  // the x coordinate of the host
         double y @unit(m);                  // the y coordinate of the host
-        @display("i=device/pc_s");
-        
-    submodules:
-        files[maxNumFiles] : File;
+        double requestInterval @unit(s);
+    gates:
+        input in @directIn;
 }
 
 simple Server
@@ -42,12 +41,22 @@ simple Server
         input in @directIn;
 }
 
+module ComplexHost
+{
+    parameters:
+        int maxNumFiles = default(0);		// the maximum ammout of files a host can store
+        @display("i=device/pc_s");
+    submodules:
+        files[maxNumFiles]: File;
+        host: Host;
+}
+
 network MyNetwork
 {
-        parameters:
+    parameters:
         int numHosts;  // number of hosts
         @display("bgi=background/streetmap,s;bgb=1000,1000");
     submodules:
-        server: Server; // The internet provider antenna
-        host[numHosts]: Host;
+        server: Server;
+        host[numHosts]: ComplexHost;
 }

@@ -1,6 +1,6 @@
-10:03:14 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+16:29:53 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
 make MODE=release all 
 make: Nothing to be done for 'all'.
 
-10:03:14 Build Finished. 0 errors, 0 warnings. (took 702ms)
+16:29:53 Build Finished. 0 errors, 0 warnings. (took 273ms)
 

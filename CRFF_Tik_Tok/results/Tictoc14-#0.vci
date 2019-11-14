@@ -1,15 +1,15 @@
-file 3627 1570688464                                            
+file 3838 1573726335                                            
 version 2
-run Tictoc14-0-20191009-21:15:05-12736
+run Tictoc14-0-20191114-12:08:12-9524
 attr configname Tictoc14
-attr datetime 20191009-21:15:05
+attr datetime 20191114-12:08:12
 attr experiment Tictoc14
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network Tictoc14
-attr processid 12736
+attr processid 9524
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -117,5 +117,14 @@ param Tictoc14.tic[9].route8 2
 param Tictoc14.tic[9].route9 0
 
 vector 0 Tictoc14.tic[6] HopCount ETV
-0	3614 11 3 3 0.2 0.2 1 2 2 2 4
+0	3612 11 3 3 0.2 0.2 1 2 2 2 4
+vector 1 Tictoc14.tic[0] HopCount ETV
+1	3662 11 5 5 0.4 0.4 1 2 2 2 4
+vector 2 Tictoc14.tic[4] HopCount ETV
+2	3712 11 7 7 0.6 0.6 1 2 2 2 4
+vector 3 Tictoc14.tic[3] HopCount ETV
+3	3762 11 8 8 0.7 0.7 1 1 1 1 1
+vector 4 Tictoc14.tic[8] HopCount ETV
+4	3812 12 10 10 0.9 0.9 1 2 2 2 4
+3	3824 12 12 12 1.1 1.1 1 2 2 2 4
 
