@@ -13,9 +13,11 @@
 // along with this program.  If not, see http://www.gnu.org/licenses/.
 //
 
-packet FooPacket
+message FileRequest
 {
     int sourceAddress;
     int destAddress;
-    bool hasPayload;
+    string fileName;
+    double txRate;
+    int fileSize;
 };

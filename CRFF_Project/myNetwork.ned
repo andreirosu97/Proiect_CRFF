@@ -15,7 +15,7 @@
 simple File
 {
     parameters:
-        int seqNumber = default(intuniform(0, 10));
+        int seqNumber = default(intuniform(0, 20));
         volatile string name = default("file");		// file name	
         volatile int size @unit(b) = default(0b);  // file size in bits
 }
@@ -44,7 +44,7 @@ simple Server
 module ComplexHost
 {
     parameters:
-        int maxNumFiles = default(0);		// the maximum ammout of files a host can store
+        int maxNumFiles = default(20);		// the maximum ammout of files a host can store
         @display("i=device/pc_s");
     submodules:
         files[maxNumFiles]: File;

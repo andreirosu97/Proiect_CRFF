@@ -21,34 +21,38 @@
 /**
  * Class generated from <tt>file.msg:17</tt> by nedtool.
  * <pre>
- * packet FooPacket
+ * message FileRequest
  * {
  *     int sourceAddress;
  *     int destAddress;
- *     bool hasPayload;
+ *     string fileName;
+ *     double txRate;
+ *     int fileSize;
  * }
  * </pre>
  */
-class FooPacket : public ::omnetpp::cPacket
+class FileRequest : public ::omnetpp::cMessage
 {
   protected:
     int sourceAddress;
     int destAddress;
-    bool hasPayload;
+    ::omnetpp::opp_string fileName;
+    double txRate;
+    int fileSize;
 
   private:
-    void copy(const FooPacket& other);
+    void copy(const FileRequest& other);
 
   protected:
     // protected and unimplemented operator==(), to prevent accidental usage
-    bool operator==(const FooPacket&);
+    bool operator==(const FileRequest&);
 
   public:
-    FooPacket(const char *name=nullptr, short kind=0);
-    FooPacket(const FooPacket& other);
-    virtual ~FooPacket();
-    FooPacket& operator=(const FooPacket& other);
-    virtual FooPacket *dup() const override {return new FooPacket(*this);}
+    FileRequest(const char *name=nullptr, short kind=0);
+    FileRequest(const FileRequest& other);
+    virtual ~FileRequest();
+    FileRequest& operator=(const FileRequest& other);
+    virtual FileRequest *dup() const override {return new FileRequest(*this);}
     virtual void parsimPack(omnetpp::cCommBuffer *b) const override;
     virtual void parsimUnpack(omnetpp::cCommBuffer *b) override;
 
@@ -57,12 +61,16 @@ class FooPacket : public ::omnetpp::cPacket
     virtual void setSourceAddress(int sourceAddress);
     virtual int getDestAddress() const;
     virtual void setDestAddress(int destAddress);
-    virtual bool getHasPayload() const;
-    virtual void setHasPayload(bool hasPayload);
+    virtual const char * getFileName() const;
+    virtual void setFileName(const char * fileName);
+    virtual double getTxRate() const;
+    virtual void setTxRate(double txRate);
+    virtual int getFileSize() const;
+    virtual void setFileSize(int fileSize);
 };
 
-inline void doParsimPacking(omnetpp::cCommBuffer *b, const FooPacket& obj) {obj.parsimPack(b);}
-inline void doParsimUnpacking(omnetpp::cCommBuffer *b, FooPacket& obj) {obj.parsimUnpack(b);}
+inline void doParsimPacking(omnetpp::cCommBuffer *b, const FileRequest& obj) {obj.parsimPack(b);}
+inline void doParsimUnpacking(omnetpp::cCommBuffer *b, FileRequest& obj) {obj.parsimUnpack(b);}
 
 
 #endif // ifndef __FILE_M_H

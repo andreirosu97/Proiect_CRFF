@@ -1,6 +1,46 @@
-16:29:53 **** Incremental Build of configuration release for project CRFF_Tik_Tok ****
+04:43:28 **** Build of configuration release for project CRFF_Tik_Tok ****
 make MODE=release all 
-make: Nothing to be done for 'all'.
+MSGC: tictoc13.msg
+MSGC: tictoc14.msg
+txc1.cc
+txc10.cc
+txc11.cc
+txc12.cc
+txc13.cc
+txc14.cc
+txc14.cc:32:5: warning: 'cLongHistogram' is deprecated [-Wdeprecated-declarations]
+    cLongHistogram hopCountStats;
+    ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/clegacyhistogram.h:355:7: note: 'cLongHistogram' has been explicitly marked deprecated here
+class _OPPDEPRECATED SIM_API cLongHistogram : public cLegacyHistogram
+      ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/platdep/platdefs.h:58:39: note: expanded from macro '_OPPDEPRECATED'
+#  define _OPPDEPRECATED __attribute((__deprecated__))
+                                      ^
+txc14.cc:128:11: warning: 'size' is deprecated [-Wdeprecated-declarations]
+  int n = size();
+          ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cmodule.h:594:5: note: 'size' has been explicitly marked deprecated here
+    _OPPDEPRECATED int size() const  {return getVectorSize();}
+    ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/platdep/platdefs.h:58:39: note: expanded from macro '_OPPDEPRECATED'
+#  define _OPPDEPRECATED __attribute((__deprecated__))
+                                      ^
+2 warnings generated.
+txc15.cc
+txc16.cc
+txc16.cc:23:5: warning: 'cLongHistogram' is deprecated [-Wdeprecated-declarations]
+    cLongHistogram hopCountStats;
+    ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/clegacyhistogram.h:355:7: note: 'cLongHistogram' has been explicitly marked deprecated here
+class _OPPDEPRECATED SIM_API cLongHistogram : public cLegacyHistogram
+      ^
+C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/platdep/platdefs.h:58:39: note: expanded from macro '_OPPDEPRECATED'
+#  define _OPPDEPRECATED __attribute((__deprecated__))
+                                      ^
+1 warning generated.
+txc17.cc
+Command canceled
 
-16:29:53 Build Finished. 0 errors, 0 warnings. (took 273ms)
+04:43:50 Build Cancelled. (took 21s.359ms)
 

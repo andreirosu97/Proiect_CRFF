@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <omnetpp.h>
+#include "Globals.h"
 
 using namespace omnetpp;
 
@@ -16,13 +17,11 @@ class Server : public cSimpleModule
   private:
     // state variables, event pointers
     bool channelBusy;
-    cMessage *endRxEvent;
+    double x;
+    double y;
+    const double propagationSpeed = 299792458.0;
 
     enum { IDLE = 0, TRANSMISSION = 1, COLLISION = 2 };
-
-  public:
-    Server();
-    virtual ~Server();
 
   protected:
     virtual void initialize() override;
@@ -32,29 +31,43 @@ class Server : public cSimpleModule
 
 Define_Module(Server);
 
-Server::Server()
-{
-    endRxEvent = nullptr;
-}
-
-Server::~Server()
-{
-    cancelAndDelete(endRxEvent);
-}
-
 void Server::initialize()
 {
-    endRxEvent = new cMessage("end-reception");
     channelBusy = false;
+
+    x = par("x").doubleValue();
+    y = par("y").doubleValue();
 
     gate("in")->setDeliverOnReceptionStart(true);
 }
 
 void Server::handleMessage(cMessage *msg)
 {
-    EV << "AM PRIMIT MESAJ " << msg->getName() << "\n";
+    double hostX;
+    double hostY;
+    if (msg->getKind() == SEND_FILE_REQUEST)
+    {
+        for(int i = 0; i < getParentModule()->par("numHosts").intValue(); i++)
+        {
+            cModule *module = getParentModule()->getSubmodule("host",i)->getSubmodule("host");
 
-    sendDirect(new cMessage("Request file from server"), 0, 0, msg->getSenderModule()->gate("in"));
+            hostX = module->par("x").doubleValue();
+            hostY = module->par("y").doubleValue();
+            double dist = std::sqrt((x-hostX) * (x-hostX) + (y-hostY) * (y-hostY));
+            simtime_t radioDelay = dist / propagationSpeed;
+
+            if (((FileRequest *)msg)->getSourceAddress() != i)
+            {
+                FileRequest *message = (FileRequest *)msg->dup();
+                sendDirect(message, radioDelay, 0, module->gate("in"));
+            }
+            else
+            {
+                cMessage* akgMessage = new cMessage("Request sent to hosts", SEND_FILE_REQUEST_AKG);
+                sendDirect(akgMessage, radioDelay, 0, module->gate("in"));
+            }
+        }
+    }
 }
 
 

@@ -1,28 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 #include <omnetpp.h>
-
-using namespace std;
-using namespace omnetpp;
+#include "File.h"
 
 /**
  * In this step we keep track of how many messages we send and received,
  * and display it above the icon.
  */
-class File : public cSimpleModule
-{
-private:
-    int seqNumber;
-    cPar *name;        // file name
-    cPar *size;           // file size in bits
-
-protected:
-    virtual void initialize() override;
-    virtual void handleMessage(cMessage *msg) override;
-public:
-    string getName();
-    int getSize();
-};
 
 Define_Module(File);
 
@@ -43,8 +27,20 @@ string File::getName() {
     return name->stdstringValue();
 }
 
+int File::getSeqNum()
+{
+    return seqNumber;
+}
+
 int File::getSize() {
     return size->intValue();
+}
+
+void File::setNameAndSeq(int seqNum)
+{
+    seqNumber = seqNum;
+    (&par("seqNumber"))->setIntValue(seqNumber);
+    name->setStringValue("file" + std::to_string(seqNumber) + ".dll");
 }
 
 

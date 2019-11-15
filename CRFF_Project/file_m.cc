@@ -177,92 +177,119 @@ inline std::ostream& operator<<(std::ostream& out, const std::vector<T,A>& vec)
     return out;
 }
 
-Register_Class(FooPacket)
+Register_Class(FileRequest)
 
-FooPacket::FooPacket(const char *name, short kind) : ::omnetpp::cPacket(name,kind)
+FileRequest::FileRequest(const char *name, short kind) : ::omnetpp::cMessage(name,kind)
 {
     this->sourceAddress = 0;
     this->destAddress = 0;
-    this->hasPayload = false;
+    this->txRate = 0;
+    this->fileSize = 0;
 }
 
-FooPacket::FooPacket(const FooPacket& other) : ::omnetpp::cPacket(other)
+FileRequest::FileRequest(const FileRequest& other) : ::omnetpp::cMessage(other)
 {
     copy(other);
 }
 
-FooPacket::~FooPacket()
+FileRequest::~FileRequest()
 {
 }
 
-FooPacket& FooPacket::operator=(const FooPacket& other)
+FileRequest& FileRequest::operator=(const FileRequest& other)
 {
     if (this==&other) return *this;
-    ::omnetpp::cPacket::operator=(other);
+    ::omnetpp::cMessage::operator=(other);
     copy(other);
     return *this;
 }
 
-void FooPacket::copy(const FooPacket& other)
+void FileRequest::copy(const FileRequest& other)
 {
     this->sourceAddress = other.sourceAddress;
     this->destAddress = other.destAddress;
-    this->hasPayload = other.hasPayload;
+    this->fileName = other.fileName;
+    this->txRate = other.txRate;
+    this->fileSize = other.fileSize;
 }
 
-void FooPacket::parsimPack(omnetpp::cCommBuffer *b) const
+void FileRequest::parsimPack(omnetpp::cCommBuffer *b) const
 {
-    ::omnetpp::cPacket::parsimPack(b);
+    ::omnetpp::cMessage::parsimPack(b);
     doParsimPacking(b,this->sourceAddress);
     doParsimPacking(b,this->destAddress);
-    doParsimPacking(b,this->hasPayload);
+    doParsimPacking(b,this->fileName);
+    doParsimPacking(b,this->txRate);
+    doParsimPacking(b,this->fileSize);
 }
 
-void FooPacket::parsimUnpack(omnetpp::cCommBuffer *b)
+void FileRequest::parsimUnpack(omnetpp::cCommBuffer *b)
 {
-    ::omnetpp::cPacket::parsimUnpack(b);
+    ::omnetpp::cMessage::parsimUnpack(b);
     doParsimUnpacking(b,this->sourceAddress);
     doParsimUnpacking(b,this->destAddress);
-    doParsimUnpacking(b,this->hasPayload);
+    doParsimUnpacking(b,this->fileName);
+    doParsimUnpacking(b,this->txRate);
+    doParsimUnpacking(b,this->fileSize);
 }
 
-int FooPacket::getSourceAddress() const
+int FileRequest::getSourceAddress() const
 {
     return this->sourceAddress;
 }
 
-void FooPacket::setSourceAddress(int sourceAddress)
+void FileRequest::setSourceAddress(int sourceAddress)
 {
     this->sourceAddress = sourceAddress;
 }
 
-int FooPacket::getDestAddress() const
+int FileRequest::getDestAddress() const
 {
     return this->destAddress;
 }
 
-void FooPacket::setDestAddress(int destAddress)
+void FileRequest::setDestAddress(int destAddress)
 {
     this->destAddress = destAddress;
 }
 
-bool FooPacket::getHasPayload() const
+const char * FileRequest::getFileName() const
 {
-    return this->hasPayload;
+    return this->fileName.c_str();
 }
 
-void FooPacket::setHasPayload(bool hasPayload)
+void FileRequest::setFileName(const char * fileName)
 {
-    this->hasPayload = hasPayload;
+    this->fileName = fileName;
 }
 
-class FooPacketDescriptor : public omnetpp::cClassDescriptor
+double FileRequest::getTxRate() const
+{
+    return this->txRate;
+}
+
+void FileRequest::setTxRate(double txRate)
+{
+    this->txRate = txRate;
+}
+
+int FileRequest::getFileSize() const
+{
+    return this->fileSize;
+}
+
+void FileRequest::setFileSize(int fileSize)
+{
+    this->fileSize = fileSize;
+}
+
+class FileRequestDescriptor : public omnetpp::cClassDescriptor
 {
   private:
     mutable const char **propertynames;
   public:
-    FooPacketDescriptor();
-    virtual ~FooPacketDescriptor();
+    FileRequestDescriptor();
+    virtual ~FileRequestDescriptor();
 
     virtual bool doesSupport(omnetpp::cObject *obj) const override;
     virtual const char **getPropertyNames() const override;
@@ -284,24 +311,24 @@ class FooPacketDescriptor : public omnetpp::cClassDescriptor
     virtual void *getFieldStructValuePointer(void *object, int field, int i) const override;
 };
 
-Register_ClassDescriptor(FooPacketDescriptor)
+Register_ClassDescriptor(FileRequestDescriptor)
 
-FooPacketDescriptor::FooPacketDescriptor() : omnetpp::cClassDescriptor("FooPacket", "omnetpp::cPacket")
+FileRequestDescriptor::FileRequestDescriptor() : omnetpp::cClassDescriptor("FileRequest", "omnetpp::cMessage")
 {
     propertynames = nullptr;
 }
 
-FooPacketDescriptor::~FooPacketDescriptor()
+FileRequestDescriptor::~FileRequestDescriptor()
 {
     delete[] propertynames;
 }
 
-bool FooPacketDescriptor::doesSupport(omnetpp::cObject *obj) const
+bool FileRequestDescriptor::doesSupport(omnetpp::cObject *obj) const
 {
-    return dynamic_cast<FooPacket *>(obj)!=nullptr;
+    return dynamic_cast<FileRequest *>(obj)!=nullptr;
 }
 
-const char **FooPacketDescriptor::getPropertyNames() const
+const char **FileRequestDescriptor::getPropertyNames() const
 {
     if (!propertynames) {
         static const char *names[] = {  nullptr };
@@ -312,19 +339,19 @@ const char **FooPacketDescriptor::getPropertyNames() const
     return propertynames;
 }
 
-const char *FooPacketDescriptor::getProperty(const char *propertyname) const
+const char *FileRequestDescriptor::getProperty(const char *propertyname) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     return basedesc ? basedesc->getProperty(propertyname) : nullptr;
 }
 
-int FooPacketDescriptor::getFieldCount() const
+int FileRequestDescriptor::getFieldCount() const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
-    return basedesc ? 3+basedesc->getFieldCount() : 3;
+    return basedesc ? 5+basedesc->getFieldCount() : 5;
 }
 
-unsigned int FooPacketDescriptor::getFieldTypeFlags(int field) const
+unsigned int FileRequestDescriptor::getFieldTypeFlags(int field) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -336,11 +363,13 @@ unsigned int FooPacketDescriptor::getFieldTypeFlags(int field) const
         FD_ISEDITABLE,
         FD_ISEDITABLE,
         FD_ISEDITABLE,
+        FD_ISEDITABLE,
+        FD_ISEDITABLE,
     };
-    return (field>=0 && field<3) ? fieldTypeFlags[field] : 0;
+    return (field>=0 && field<5) ? fieldTypeFlags[field] : 0;
 }
 
-const char *FooPacketDescriptor::getFieldName(int field) const
+const char *FileRequestDescriptor::getFieldName(int field) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -351,22 +380,26 @@ const char *FooPacketDescriptor::getFieldName(int field) const
     static const char *fieldNames[] = {
         "sourceAddress",
         "destAddress",
-        "hasPayload",
+        "fileName",
+        "txRate",
+        "fileSize",
     };
-    return (field>=0 && field<3) ? fieldNames[field] : nullptr;
+    return (field>=0 && field<5) ? fieldNames[field] : nullptr;
 }
 
-int FooPacketDescriptor::findField(const char *fieldName) const
+int FileRequestDescriptor::findField(const char *fieldName) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     int base = basedesc ? basedesc->getFieldCount() : 0;
     if (fieldName[0]=='s' && strcmp(fieldName, "sourceAddress")==0) return base+0;
     if (fieldName[0]=='d' && strcmp(fieldName, "destAddress")==0) return base+1;
-    if (fieldName[0]=='h' && strcmp(fieldName, "hasPayload")==0) return base+2;
+    if (fieldName[0]=='f' && strcmp(fieldName, "fileName")==0) return base+2;
+    if (fieldName[0]=='t' && strcmp(fieldName, "txRate")==0) return base+3;
+    if (fieldName[0]=='f' && strcmp(fieldName, "fileSize")==0) return base+4;
     return basedesc ? basedesc->findField(fieldName) : -1;
 }
 
-const char *FooPacketDescriptor::getFieldTypeString(int field) const
+const char *FileRequestDescriptor::getFieldTypeString(int field) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -377,12 +410,14 @@ const char *FooPacketDescriptor::getFieldTypeString(int field) const
     static const char *fieldTypeStrings[] = {
         "int",
         "int",
-        "bool",
+        "string",
+        "double",
+        "int",
     };
-    return (field>=0 && field<3) ? fieldTypeStrings[field] : nullptr;
+    return (field>=0 && field<5) ? fieldTypeStrings[field] : nullptr;
 }
 
-const char **FooPacketDescriptor::getFieldPropertyNames(int field) const
+const char **FileRequestDescriptor::getFieldPropertyNames(int field) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -395,7 +430,7 @@ const char **FooPacketDescriptor::getFieldPropertyNames(int field) const
     }
 }
 
-const char *FooPacketDescriptor::getFieldProperty(int field, const char *propertyname) const
+const char *FileRequestDescriptor::getFieldProperty(int field, const char *propertyname) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -408,7 +443,7 @@ const char *FooPacketDescriptor::getFieldProperty(int field, const char *propert
     }
 }
 
-int FooPacketDescriptor::getFieldArraySize(void *object, int field) const
+int FileRequestDescriptor::getFieldArraySize(void *object, int field) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -416,13 +451,13 @@ int FooPacketDescriptor::getFieldArraySize(void *object, int field) const
             return basedesc->getFieldArraySize(object, field);
         field -= basedesc->getFieldCount();
     }
-    FooPacket *pp = (FooPacket *)object; (void)pp;
+    FileRequest *pp = (FileRequest *)object; (void)pp;
     switch (field) {
         default: return 0;
     }
 }
 
-const char *FooPacketDescriptor::getFieldDynamicTypeString(void *object, int field, int i) const
+const char *FileRequestDescriptor::getFieldDynamicTypeString(void *object, int field, int i) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -430,13 +465,13 @@ const char *FooPacketDescriptor::getFieldDynamicTypeString(void *object, int fie
             return basedesc->getFieldDynamicTypeString(object,field,i);
         field -= basedesc->getFieldCount();
     }
-    FooPacket *pp = (FooPacket *)object; (void)pp;
+    FileRequest *pp = (FileRequest *)object; (void)pp;
     switch (field) {
         default: return nullptr;
     }
 }
 
-std::string FooPacketDescriptor::getFieldValueAsString(void *object, int field, int i) const
+std::string FileRequestDescriptor::getFieldValueAsString(void *object, int field, int i) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -444,16 +479,18 @@ std::string FooPacketDescriptor::getFieldValueAsString(void *object, int field, 
             return basedesc->getFieldValueAsString(object,field,i);
         field -= basedesc->getFieldCount();
     }
-    FooPacket *pp = (FooPacket *)object; (void)pp;
+    FileRequest *pp = (FileRequest *)object; (void)pp;
     switch (field) {
         case 0: return long2string(pp->getSourceAddress());
         case 1: return long2string(pp->getDestAddress());
-        case 2: return bool2string(pp->getHasPayload());
+        case 2: return oppstring2string(pp->getFileName());
+        case 3: return double2string(pp->getTxRate());
+        case 4: return long2string(pp->getFileSize());
         default: return "";
     }
 }
 
-bool FooPacketDescriptor::setFieldValueAsString(void *object, int field, int i, const char *value) const
+bool FileRequestDescriptor::setFieldValueAsString(void *object, int field, int i, const char *value) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -461,16 +498,18 @@ bool FooPacketDescriptor::setFieldValueAsString(void *object, int field, int i, 
             return basedesc->setFieldValueAsString(object,field,i,value);
         field -= basedesc->getFieldCount();
     }
-    FooPacket *pp = (FooPacket *)object; (void)pp;
+    FileRequest *pp = (FileRequest *)object; (void)pp;
     switch (field) {
         case 0: pp->setSourceAddress(string2long(value)); return true;
         case 1: pp->setDestAddress(string2long(value)); return true;
-        case 2: pp->setHasPayload(string2bool(value)); return true;
+        case 2: pp->setFileName((value)); return true;
+        case 3: pp->setTxRate(string2double(value)); return true;
+        case 4: pp->setFileSize(string2long(value)); return true;
         default: return false;
     }
 }
 
-const char *FooPacketDescriptor::getFieldStructName(int field) const
+const char *FileRequestDescriptor::getFieldStructName(int field) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -483,7 +522,7 @@ const char *FooPacketDescriptor::getFieldStructName(int field) const
     };
 }
 
-void *FooPacketDescriptor::getFieldStructValuePointer(void *object, int field, int i) const
+void *FileRequestDescriptor::getFieldStructValuePointer(void *object, int field, int i) const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     if (basedesc) {
@@ -491,7 +530,7 @@ void *FooPacketDescriptor::getFieldStructValuePointer(void *object, int field, i
             return basedesc->getFieldStructValuePointer(object, field, i);
         field -= basedesc->getFieldCount();
     }
-    FooPacket *pp = (FooPacket *)object; (void)pp;
+    FileRequest *pp = (FileRequest *)object; (void)pp;
     switch (field) {
         default: return nullptr;
     }
