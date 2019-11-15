@@ -43,6 +43,18 @@ void File::setNameAndSeq(int seqNum)
     name->setStringValue("file" + std::to_string(seqNumber) + ".dll");
 }
 
+void File::deleteFile()
+{
+    name->setStringValue("N/A");
+    (&par("seqNumber"))->setIntValue(-1);
+    size->setIntValue(0);
+}
+
+void File::setSize(int fileSize)
+{
+    size->setIntValue(fileSize);
+}
+
 
 
 

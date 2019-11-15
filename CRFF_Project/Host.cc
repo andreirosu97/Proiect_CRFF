@@ -85,7 +85,7 @@ void Host::initialize()
     double dist = std::sqrt((x-serverX) * (x-serverX) + (y-serverY) * (y-serverY));
     radioDelay = dist / propagationSpeed;
 
-    if(getParentModule()->getIndex() == 0 ||getParentModule()->getIndex() == 1)
+    if(getParentModule()->par("active").boolValue() == true)
         requestNewFile();
 
 }
@@ -111,6 +111,23 @@ void Host::handleMessage(cMessage *msg)
                 EV << "Last request did not get a response yet.\n";
                 scheduleAt(getNextTransmissionTime(), msg);
             }
+            break;
+        }
+    case SEND_FILE_REQUEST_TIME_OUT: //Server did not respond sending again.
+        {
+            ASSERT(state == REQUESTING);
+            EV << "Server did not receive my request, resending it.\n";
+            scheduleAt(getNextTransmissionTime(),lastFileReq);
+            break;
+        }
+    case SEND_FILE_REQUEST_AKG:
+        {
+            ASSERT(state == REQUESTING);
+            EV << "Akg from server ----> Changing state of host["<< getParentModule()->getIndex() <<"] to SELECTING\n";
+            cancelEvent(fileReqTimeoutEv);
+            state = SELECTING;
+            requestModule = nullptr;
+            scheduleAt(simTime() + WAIT_FOR_OFFERS_TIMEOUT, anyOffersTimeoutEv);
             break;
         }
     case SEND_FILE_REQUEST:
@@ -148,18 +165,7 @@ void Host::handleMessage(cMessage *msg)
             }
             break;
         }
-    case SEND_FILE_REQUEST_AKG:
-        {
-            if (state == REQUESTING)
-            {
-                EV << "Akg from server ----> Changing state of host["<< getParentModule()->getIndex() <<"] to SELECTING\n";
-                cancelEvent(fileReqTimeoutEv);
-                state = SELECTING;
-                requestModule = nullptr;
-                scheduleAt(simTime() + WAIT_FOR_OFFERS_TIMEOUT, anyOffersTimeoutEv);
-            }
-            break;
-        }
+
     case NO_OFFER_RECEIVED_EVENT:
         {
             ASSERT(state == SELECTING);
@@ -226,13 +232,7 @@ void Host::handleMessage(cMessage *msg)
             EV << "Reject Offer ----> Changing state of host["<< getParentModule()->getIndex() <<"] to IDLE\n";
             break;
         }
-    case SEND_FILE_REQUEST_TIME_OUT: //Server did not respond sending again.
-        {
-            ASSERT(state == REQUESTING);
-            EV << "Server did not receive my request, resending it.\n";
-            scheduleAt(getNextTransmissionTime(),lastFileReq);
-            break;
-        }
+
 
     case RECEIVE_FILE_REQUEST_EVENT:
         {
@@ -254,6 +254,8 @@ void Host::handleMessage(cMessage *msg)
             cancelEvent(moreOffersTimeoutEv);
             FileRequest *recvFileReq = (FileRequest *)msg->dup();
             FilePacket *filePacket = new FilePacket(recvFileReq->getFileName());
+            file = findFile(recvFileReq->getFileName());
+            filePacket->setSeqNumber(file->getSeqNum());
             filePacket->setBitLength(recvFileReq->getFileSize());
             filePacket->setKind(FILE_PACKAGE);
             simtime_t duration = filePacket->getBitLength() / txRate;
@@ -304,7 +306,7 @@ cMessage* Host::generateMessage(int msgType)
             char msgname[20];
             char fileName[20];
             do{
-                    sprintf(fileName, "file%d.dll",intuniform(0,20));
+                    sprintf(fileName, "file%d.dll",intuniform(0,par("end")));
             }while(findFile(fileName) != nullptr);
 
             sprintf(msgname, "Request for %s", fileName);
@@ -330,7 +332,6 @@ File* Host::findFile(const char* fileName)
         file = (File*)getParentModule()->getSubmodule("files",i);
         if (file->getFileName() == std::string(fileName))
         {
-            EV << "I HAVE IT !\n";
             return file;
         }
     }
@@ -390,17 +391,36 @@ void Host::fixFileName()
         }
     }
     while(toBeFixed);
+
+    for(int i = 0; i < getParentModule()->par("maxNumFiles").intValue()/2 ; i++)
+    {
+        file1 = (File*)getParentModule()->getSubmodule("files",i);
+        file1->deleteFile();
+    }
+
 }
 
 void Host::requestNewFile()
 {
     lastFileReq = nullptr;
+    if (findFile("N/A") == nullptr)
+    {
+        EV << "Data storage is full, cannot receive new files!\n";
+        return;
+    }
     scheduleAt(getNextTransmissionTime(),generateMessage(SEND_FILE_REQUEST_EVENT));
 }
 
 void Host::storeFileFromPacket(FilePacket *packet)
 {
-    //TODO Store packet
+    File *newFile = findFile("N/A");
+    if (newFile == nullptr)
+        EV << "Data storage is full, cannot receive new files!\n";
+    else
+    {
+        newFile->setNameAndSeq(packet->getSeqNumber());
+        newFile->setSize(packet->getBitLength());
+    }
 }
 
 

@@ -25,6 +25,8 @@ public:
     int getSize();
     int getSeqNum();
     void setNameAndSeq(int seqNum);
+    void deleteFile();
+    void setSize(int fileSize);
 };
 
 

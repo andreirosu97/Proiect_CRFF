@@ -15,7 +15,8 @@
 simple File
 {
     parameters:
-        int seqNumber = default(intuniform(0, 20));
+        int end = default(20);
+        int seqNumber = default(intuniform(0, end));
         volatile string name = default("file");		// file name	
         volatile int size @unit(b) = default(0b);  // file size in bits
 }
@@ -27,6 +28,7 @@ simple Host
         double x @unit(m);                  // the x coordinate of the host
         double y @unit(m);                  // the y coordinate of the host
         double requestInterval @unit(s);
+        int end;
     gates:
         input in @directIn;
 }
@@ -44,6 +46,7 @@ simple Server
 module ComplexHost
 {
     parameters:
+        bool active = default(false);
         int maxNumFiles = default(20);		// the maximum ammout of files a host can store
         @display("i=device/pc_s");
     submodules:

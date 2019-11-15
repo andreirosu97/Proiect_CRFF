@@ -119,3 +119,242 @@ Creating executable: out/clang-release//CRFF_Project.exe
 make MODE=release all 
 Host.cc
 Creating executable: out/clang-release//CRFF_Project.exe
+17:42:51 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:47:54 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:04:38 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+File.cc
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+18:05:23 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:05:39 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+18:21:24 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+File.cc
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+18:24:56 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+File.cc
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+18:27:18 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+18:31:40 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:00:11 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:125:13: error: use of undeclared identifier 'ASERT'
+            ASERT(state == REQUESTING);
+            ^
+1 error generated.
+make: *** [Makefile:106: out/clang-release//Host.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:00:17 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:125:13: error: use of undeclared identifier 'ASERT'
+            ASERT(state == REQUESTING);
+            ^
+1 error generated.
+make: *** [Makefile:106: out/clang-release//Host.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:00:28 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+19:01:31 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+19:05:57 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+19:06:59 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:07:41 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:09:37 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:13:23 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:18:07 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:88:41: error: use of overloaded operator '==' is ambiguous (with operand types 'omnetpp::cPar' and 'bool')
+    if(getParentModule()->par("active") == true)
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ^  ~~~~
+Host.cc:88:41: note: built-in candidate operator==(long long, int)
+Host.cc:88:41: note: built-in candidate operator==(__float128, int)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, int)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, int)
+Host.cc:88:41: note: built-in candidate operator==(long double, int)
+Host.cc:88:41: note: built-in candidate operator==(int, int)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, int)
+Host.cc:88:41: note: built-in candidate operator==(__int128, int)
+Host.cc:88:41: note: built-in candidate operator==(double, int)
+Host.cc:88:41: note: built-in candidate operator==(long, int)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, int)
+Host.cc:88:41: note: built-in candidate operator==(float, int)
+Host.cc:88:41: note: built-in candidate operator==(__int128, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, long double)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, __int128)
+Host.cc:88:41: note: built-in candidate operator==(long long, long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, long long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, long)
+Host.cc:88:41: note: built-in candidate operator==(long long, long long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, __float128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, long double)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, double)
+Host.cc:88:41: note: built-in candidate operator==(long long, __int128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, float)
+Host.cc:88:41: note: built-in candidate operator==(long long, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(__int128, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(__int128, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(long long, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(__int128, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(__int128, __int128)
+Host.cc:88:41: note: built-in candidate operator==(__int128, long long)
+Host.cc:88:41: note: built-in candidate operator==(__int128, long)
+Host.cc:88:41: note: built-in candidate operator==(long long, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(long long, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(__int128, __float128)
+Host.cc:88:41: note: built-in candidate operator==(__int128, long double)
+Host.cc:88:41: note: built-in candidate operator==(__int128, double)
+Host.cc:88:41: note: built-in candidate operator==(__int128, float)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, __float128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, __int128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, float)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, double)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, long double)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, long long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, long long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, __int128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned __int128, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, float)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, double)
+Host.cc:88:41: note: built-in candidate operator==(long long, float)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, __float128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, long long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, __int128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(unsigned int, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, float)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, double)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, long double)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, __float128)
+Host.cc:88:41: note: built-in candidate operator==(unsigned long long, long)
+Host.cc:88:41: note: built-in candidate operator==(long double, long)
+Host.cc:88:41: note: built-in candidate operator==(double, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(double, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(double, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(double, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(long double, float)
+Host.cc:88:41: note: built-in candidate operator==(long double, double)
+Host.cc:88:41: note: built-in candidate operator==(long double, long double)
+Host.cc:88:41: note: built-in candidate operator==(long double, __float128)
+Host.cc:88:41: note: built-in candidate operator==(double, __int128)
+Host.cc:88:41: note: built-in candidate operator==(long double, long long)
+Host.cc:88:41: note: built-in candidate operator==(long double, __int128)
+Host.cc:88:41: note: built-in candidate operator==(long double, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(long double, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(long double, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(long double, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(__float128, float)
+Host.cc:88:41: note: built-in candidate operator==(__float128, double)
+Host.cc:88:41: note: built-in candidate operator==(float, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(float, double)
+Host.cc:88:41: note: built-in candidate operator==(float, long double)
+Host.cc:88:41: note: built-in candidate operator==(float, __float128)
+Host.cc:88:41: note: built-in candidate operator==(float, long)
+Host.cc:88:41: note: built-in candidate operator==(float, long long)
+Host.cc:88:41: note: built-in candidate operator==(float, __int128)
+Host.cc:88:41: note: built-in candidate operator==(float, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(float, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(__float128, long double)
+Host.cc:88:41: note: built-in candidate operator==(float, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(double, float)
+Host.cc:88:41: note: built-in candidate operator==(double, double)
+Host.cc:88:41: note: built-in candidate operator==(double, long double)
+Host.cc:88:41: note: built-in candidate operator==(double, __float128)
+Host.cc:88:41: note: built-in candidate operator==(double, long)
+Host.cc:88:41: note: built-in candidate operator==(double, long long)
+Host.cc:88:41: note: built-in candidate operator==(long, __int128)
+Host.cc:88:41: note: built-in candidate operator==(int, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(int, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(long, float)
+Host.cc:88:41: note: built-in candidate operator==(long, double)
+Host.cc:88:41: note: built-in candidate operator==(long, long double)
+Host.cc:88:41: note: built-in candidate operator==(long, __float128)
+Host.cc:88:41: note: built-in candidate operator==(long, long)
+Host.cc:88:41: note: built-in candidate operator==(long, long long)
+Host.cc:88:41: note: built-in candidate operator==(int, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(long, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(long, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(long, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(long, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(float, float)
+Host.cc:88:41: note: built-in candidate operator==(long long, double)
+Host.cc:88:41: note: built-in candidate operator==(long long, long double)
+Host.cc:88:41: note: built-in candidate operator==(int, float)
+Host.cc:88:41: note: built-in candidate operator==(__float128, __float128)
+Host.cc:88:41: note: built-in candidate operator==(__float128, long)
+Host.cc:88:41: note: built-in candidate operator==(__float128, long long)
+Host.cc:88:41: note: built-in candidate operator==(__float128, __int128)
+Host.cc:88:41: note: built-in candidate operator==(__float128, unsigned int)
+Host.cc:88:41: note: built-in candidate operator==(__float128, unsigned long)
+Host.cc:88:41: note: built-in candidate operator==(__float128, unsigned long long)
+Host.cc:88:41: note: built-in candidate operator==(__float128, unsigned __int128)
+Host.cc:88:41: note: built-in candidate operator==(long long, __float128)
+Host.cc:88:41: note: built-in candidate operator==(int, double)
+Host.cc:88:41: note: built-in candidate operator==(int, long double)
+Host.cc:88:41: note: built-in candidate operator==(int, __float128)
+Host.cc:88:41: note: built-in candidate operator==(int, long)
+Host.cc:88:41: note: built-in candidate operator==(int, long long)
+Host.cc:88:41: note: built-in candidate operator==(int, __int128)
+Host.cc:88:41: note: built-in candidate operator==(int, unsigned int)
+1 error generated.
+make: *** [Makefile:106: out/clang-release//Host.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+19:18:31 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+19:20:18 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+19:21:20 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
