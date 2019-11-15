@@ -1,8 +1,9 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:aloha,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok - tictoc2 (1),org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok - tictoc2,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok - Tictoc6,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok - Tictoc8,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok - Tictoc9,org.eclipse.launchbar.core.descriptorType.default\:WIFI_TUTORIAL - Wireless01,org.eclipse.launchbar.core.descriptorType.default\:WIFI_TUTORIAL,org.eclipse.launchbar.core.descriptorType.default\:aloha - akaroa,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok,org.eclipse.launchbar.core.descriptorType.default\:src,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok (1),org.eclipse.launchbar.core.descriptorType.default\:CRFF_Project - Basic,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Project
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:aloha - akaroa,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok,org.eclipse.launchbar.core.descriptorType.default\:src,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok (1),org.eclipse.launchbar.core.descriptorType.default\:CRFF_Project - Basic,org.eclipse.launchbar.core.descriptorType.default\:aloha,org.eclipse.launchbar.core.descriptorType.default\:CRFF_Project
 eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:CRFF_Project/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:CRFF_Tik_Tok/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:aloha\ -\ akaroa/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:aloha\ -\ akaroa/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

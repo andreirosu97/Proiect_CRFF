@@ -1,538 +1,121 @@
-04:44:30 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
+16:32:33 **** Incremental Build of configuration debug for project CRFF_Project ****
+make MODE=debug all 
 make: Nothing to be done for 'all'.
-04:44:35 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
+16:32:39 **** Incremental Build of configuration debug for project CRFF_Project ****
+make MODE=debug all 
 make: Nothing to be done for 'all'.
-04:45:05 **** Incremental Build of configuration release for project CRFF_Project ****
+16:32:44 **** Incremental Build of configuration debug for project CRFF_Project ****
+make MODE=debug all 
+make: Nothing to be done for 'all'.
+16:35:28 **** Incremental Build of configuration release for project CRFF_Project ****
 make MODE=release all 
 Host.cc
 Creating executable: out/clang-release//CRFF_Project.exe
-04:46:23 **** Incremental Build of configuration release for project CRFF_Project ****
+16:36:27 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:37:37 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:38:32 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+16:39:02 **** Incremental Build of configuration debug for project CRFF_Project ****
+make MODE=debug all 
+Host.cc
+Server.cc
+Creating executable: out/clang-debug//CRFF_Project_dbg.exe
+C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-debug//CRFF_Project_dbg.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:97: out/clang-debug//CRFF_Project_dbg.exe] Error 1
+"make MODE=debug all" terminated with exit code 2. Build might be incomplete.
+16:50:38 **** Incremental Build of configuration debug for project CRFF_Project ****
+make MODE=debug all 
+Host.cc
+Server.cc
+Creating executable: out/clang-debug//CRFF_Project_dbg.exe
+16:53:46 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+16:55:57 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:01:41 **** Incremental Build of configuration release for project CRFF_Project ****
 make MODE=release all 
 Host.cc
 Creating executable: out/clang-release//CRFF_Project.exe
 C:\Users\Andrei\Desktop\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Project.exe: Permission denied
 clang++.exe: error: unable to remove file: Permission denied
 clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-04:46:31 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Creating executable: out/clang-release//CRFF_Project.exe
-04:47:31 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-04:48:51 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-04:49:16 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-04:49:56 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-04:50:39 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Host.cc:117:27: error: use of undeclared identifier 'srcX'
-                    EV << srcX << " " << scrY << "\n";
-                          ^
-Host.cc:117:42: error: use of undeclared identifier 'scrY'
-                    EV << srcX << " " << scrY << "\n";
-                                         ^
-2 errors generated.
-make: *** [Makefile:105: out/clang-release//Host.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-04:50:52 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-04:52:05 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-04:52:28 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-04:52:50 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-04:54:52 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-04:55:12 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-04:57:38 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Host.cc:119:66: error: use of undeclared identifier 'srcY'; did you mean 'srcX'?
-                    EV << x << " " << srcX << " " << y << " " << srcY << "\n";
-                                                                 ^~~~
-                                                                 srcX
-Host.cc:117:28: note: 'srcX' declared here
-                    double srcX = sourceModule->par("x").doubleValue();
-                           ^
-1 error generated.
-make: *** [Makefile:105: out/clang-release//Host.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-04:57:49 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-04:58:25 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-05:03:12 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-05:07:50 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-10:37:19 **** Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-File.cc
-Host.cc
-Server.cc
-file_m.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-10:38:33 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-11:02:52 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:05:57 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:07:21 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-11:08:42 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:08:55 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:09:51 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-11:10:54 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:13:41 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:14:59 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:23:02 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-11:23:03 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-11:25:08 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:26:19 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:27:49 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Host.cc:115:45: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
-                    message->setName(strcat("Offering for ",fileName));
-                                            ^
-1 warning generated.
-Creating executable: out/clang-release//CRFF_Project.exe
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Project.exe: Permission denied
-clang++.exe: error: unable to remove file: Permission denied
-clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-11:29:54 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Host.cc:117:38: error: no matching function for call to 'to_string'
-                    message->setName(std::to_string(newFileName));
-                                     ^~~~~~~~~~~~~~
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6212:3: note: candidate function not viable: no known conversion from 'char *' to 'int' for 1st argument; dereference the argument with *
-  to_string(int __val)
-  ^
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6217:3: note: candidate function not viable: no known conversion from 'char *' to 'unsigned int' for 1st argument; dereference the argument with *
-  to_string(unsigned __val)
-  ^
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6223:3: note: candidate function not viable: no known conversion from 'char *' to 'long' for 1st argument; dereference the argument with *
-  to_string(long __val)
-  ^
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6228:3: note: candidate function not viable: no known conversion from 'char *' to 'unsigned long' for 1st argument; dereference the argument with *
-  to_string(unsigned long __val)
-  ^
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6234:3: note: candidate function not viable: no known conversion from 'char *' to 'long long' for 1st argument; dereference the argument with *
-  to_string(long long __val)
-  ^
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6240:3: note: candidate function not viable: no known conversion from 'char *' to 'unsigned long long' for 1st argument; dereference the argument with *
-  to_string(unsigned long long __val)
-  ^
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6246:3: note: candidate function not viable: no known conversion from 'char *' to 'float' for 1st argument; dereference the argument with *
-  to_string(float __val)
-  ^
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6255:3: note: candidate function not viable: no known conversion from 'char *' to 'double' for 1st argument; dereference the argument with *
-  to_string(double __val)
-  ^
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6264:3: note: candidate function not viable: no known conversion from 'char *' to 'long double' for 1st argument; dereference the argument with *
-  to_string(long double __val)
-  ^
-1 error generated.
-make: *** [Makefile:105: out/clang-release//Host.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-11:30:15 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Host.cc:117:38: error: cannot initialize a parameter of type 'const char *' with an rvalue of type 'std::__cxx11::string *' (aka 'basic_string<char> *')
-                    message->setName(new string(newFileName));
-                                     ^~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cnamedobject.h:111:38: note: passing argument to parameter 's' here
-    virtual void setName(const char *s);
-                                     ^
-1 error generated.
-make: *** [Makefile:105: out/clang-release//Host.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-11:31:01 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Host.cc:117:38: error: cannot initialize a parameter of type 'const char *' with an rvalue of type 'std::string *' (aka 'basic_string<char> *')
-                    message->setName(new std::string(newFileName));
-                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cnamedobject.h:111:38: note: passing argument to parameter 's' here
-    virtual void setName(const char *s);
-                                     ^
-1 error generated.
-make: *** [Makefile:105: out/clang-release//Host.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-11:31:23 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Project.exe: Permission denied
-clang++.exe: error: unable to remove file: Permission denied
-clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
-make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-11:31:32 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Creating executable: out/clang-release//CRFF_Project.exe
-11:32:13 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:33:19 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:38:21 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:39:23 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:41:03 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:44:49 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:46:21 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:48:19 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-11:49:41 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-11:54:40 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-12:01:11 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Server.cc
-Server.cc:59:73: error: member reference type 'int' is not a pointer
-        sendDirect(akgMessage, radioDelay, 0, msg->getSenderModuleId()->gate("in"));
-                                              ~~~~~~~~~~~~~~~~~~~~~~~~  ^
-Server.cc:59:32: error: use of undeclared identifier 'radioDelay'
-        sendDirect(akgMessage, radioDelay, 0, msg->getSenderModuleId()->gate("in"));
-                               ^
-Server.cc:60:32: error: expected ')'
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                               ^
-Server.cc:14:33: note: expanded from macro 'BOARDCAST_START_DELAY'
-#define BOARDCAST_START_DELAY 10;
-                                ^
-Server.cc:60:19: note: to match this '('
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                  ^
-Server.cc:60:53: error: expected expression
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                                                    ^
-4 errors generated.
-make: *** [Makefile:105: out/clang-release//Server.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-12:01:37 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Server.cc:59:71: error: member reference base type 'int' is not a structure or union
-        sendDirect(akgMessage, radioDelay, 0, msg->getSenderModuleId().gate("in"));
-                                              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
-Server.cc:59:32: error: use of undeclared identifier 'radioDelay'
-        sendDirect(akgMessage, radioDelay, 0, msg->getSenderModuleId().gate("in"));
-                               ^
-Server.cc:60:32: error: expected ')'
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                               ^
-Server.cc:14:33: note: expanded from macro 'BOARDCAST_START_DELAY'
-#define BOARDCAST_START_DELAY 10;
-                                ^
-Server.cc:60:19: note: to match this '('
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                  ^
-Server.cc:60:53: error: expected expression
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                                                    ^
-4 errors generated.
-make: *** [Makefile:105: out/clang-release//Server.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-12:02:00 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Server.cc:59:32: error: use of undeclared identifier 'radioDelay'
-        sendDirect(akgMessage, radioDelay, 0, msg->getSenderModule()->gate("in"));
-                               ^
-Server.cc:60:32: error: expected ')'
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                               ^
-Server.cc:14:33: note: expanded from macro 'BOARDCAST_START_DELAY'
-#define BOARDCAST_START_DELAY 10;
-                                ^
-Server.cc:60:19: note: to match this '('
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                  ^
-Server.cc:60:53: error: expected expression
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                                                    ^
-3 errors generated.
-make: *** [Makefile:105: out/clang-release//Server.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-12:03:13 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Server.cc:67:32: error: expected ')'
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                               ^
-Server.cc:14:33: note: expanded from macro 'BOARDCAST_START_DELAY'
-#define BOARDCAST_START_DELAY 10;
-                                ^
-Server.cc:67:19: note: to match this '('
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                  ^
-Server.cc:67:53: error: expected expression
-        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
-                                                    ^
-2 errors generated.
-make: *** [Makefile:105: out/clang-release//Server.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-12:03:34 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Server.cc:67:30: error: expected ')'
-        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
-                             ^
-Server.cc:14:33: note: expanded from macro 'BOARDCAST_START_DELAY'
-#define BOARDCAST_START_DELAY 10;
-                                ^
-Server.cc:67:19: note: to match this '('
-        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
-                  ^
-Server.cc:67:51: error: expected expression
-        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
-                                                  ^
-2 errors generated.
-make: *** [Makefile:105: out/clang-release//Server.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-12:03:45 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Server.cc:67:30: error: expected ')'
-        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
-                             ^
-Server.cc:11:33: note: expanded from macro 'BOARDCAST_START_DELAY'
-#define BOARDCAST_START_DELAY 10;
-                                ^
-Server.cc:67:19: note: to match this '('
-        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
-                  ^
-Server.cc:67:51: error: expected expression
-        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
-                                                  ^
-2 errors generated.
-make: *** [Makefile:105: out/clang-release//Server.o] Error 1
-"make MODE=release all" terminated with exit code 2. Build might be incomplete.
-12:04:14 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-12:04:23 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-12:06:54 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-12:07:38 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-12:08:26 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-12:08:43 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-12:09:32 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-12:09:59 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-12:10:33 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-12:10:53 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-12:13:58 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-12:14:52 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-14:37:37 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-MSGC: file_packet.msg
-Host.cc
-Server.cc
-file_packet_m.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-14:38:43 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Server.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-14:39:23 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-14:40:43 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-14:41:20 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-14:43:31 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-14:45:26 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-14:47:48 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Creating executable: out/clang-release//CRFF_Project.exe
-14:49:41 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Host.cc:156:31: warning: equality comparison result unused [-Wunused-comparison]
-                requestModule == nullptr;
-                ~~~~~~~~~~~~~~^~~~~~~~~~
-Host.cc:156:31: note: use '=' to turn this equality comparison into an assignment
-                requestModule == nullptr;
-                              ^~
-                              =
-1 warning generated.
-Creating executable: out/clang-release//CRFF_Project.exe
-14:49:52 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-14:51:59 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Host.cc:156:31: warning: equality comparison result unused [-Wunused-comparison]
-                requestModule == nullptr;
-                ~~~~~~~~~~~~~~^~~~~~~~~~
-Host.cc:156:31: note: use '=' to turn this equality comparison into an assignment
-                requestModule == nullptr;
-                              ^~
-                              =
-1 warning generated.
-Creating executable: out/clang-release//CRFF_Project.exe
-14:52:45 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-make: Nothing to be done for 'all'.
-14:53:25 **** Incremental Build of configuration release for project CRFF_Project ****
-make MODE=release all 
-Host.cc
-Host.cc:156:31: warning: equality comparison result unused [-Wunused-comparison]
-                requestModule == nullptr;
-                ~~~~~~~~~~~~~~^~~~~~~~~~
-Host.cc:156:31: note: use '=' to turn this equality comparison into an assignment
-                requestModule == nullptr;
-                              ^~
-                              =
-1 warning generated.
-Creating executable: out/clang-release//CRFF_Project.exe
-C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Project.exe: Permission denied
-clang++.exe: error: unable to remove file: Permission denied
-clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
 make: *** [Makefile:97: out/clang-release//CRFF_Project.exe] Error 1
 "make MODE=release all" terminated with exit code 2. Build might be incomplete.
-14:53:33 **** Incremental Build of configuration release for project CRFF_Project ****
+17:01:46 **** Incremental Build of configuration release for project CRFF_Project ****
 make MODE=release all 
+Creating executable: out/clang-release//CRFF_Project.exe
+17:04:31 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+17:08:06 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:388:26: error: assigning to 'FileRequest *' from incompatible type 'omnetpp::cMessage *'
+        fileReqMessage = generateMessage(SEND_FILE_REQUEST_EVENT);
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [Makefile:106: out/clang-release//Host.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+17:08:24 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+17:10:33 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+17:12:25 **** Build of configuration release for project aloha ****
+make MODE=release all 
+Host.cc
+Server.cc
+Creating executable: out/clang-release//aloha.exe
+17:14:29 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:14:41 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:22:05 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+17:24:18 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+17:28:55 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+17:31:05 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+17:32:26 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+17:33:09 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+17:33:42 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
 Creating executable: out/clang-release//CRFF_Project.exe

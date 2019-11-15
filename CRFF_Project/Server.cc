@@ -44,8 +44,6 @@ void Server::initialize()
 
     x = par("x").doubleValue();
     y = par("y").doubleValue();
-
-    gate("in")->setDeliverOnReceptionStart(true);
 }
 
 void Server::handleMessage(cMessage *msg)

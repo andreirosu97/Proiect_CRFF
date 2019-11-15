@@ -182,7 +182,6 @@ Register_Class(FilePacket)
 FilePacket::FilePacket(const char *name, short kind) : ::omnetpp::cPacket(name,kind)
 {
     this->seqNumber = 0;
-    this->size = 0;
 }
 
 FilePacket::FilePacket(const FilePacket& other) : ::omnetpp::cPacket(other)
@@ -205,24 +204,18 @@ FilePacket& FilePacket::operator=(const FilePacket& other)
 void FilePacket::copy(const FilePacket& other)
 {
     this->seqNumber = other.seqNumber;
-    this->fileName = other.fileName;
-    this->size = other.size;
 }
 
 void FilePacket::parsimPack(omnetpp::cCommBuffer *b) const
 {
     ::omnetpp::cPacket::parsimPack(b);
     doParsimPacking(b,this->seqNumber);
-    doParsimPacking(b,this->fileName);
-    doParsimPacking(b,this->size);
 }
 
 void FilePacket::parsimUnpack(omnetpp::cCommBuffer *b)
 {
     ::omnetpp::cPacket::parsimUnpack(b);
     doParsimUnpacking(b,this->seqNumber);
-    doParsimUnpacking(b,this->fileName);
-    doParsimUnpacking(b,this->size);
 }
 
 int FilePacket::getSeqNumber() const
@@ -233,26 +226,6 @@ int FilePacket::getSeqNumber() const
 void FilePacket::setSeqNumber(int seqNumber)
 {
     this->seqNumber = seqNumber;
-}
-
-const char * FilePacket::getFileName() const
-{
-    return this->fileName.c_str();
-}
-
-void FilePacket::setFileName(const char * fileName)
-{
-    this->fileName = fileName;
-}
-
-int FilePacket::getSize() const
-{
-    return this->size;
-}
-
-void FilePacket::setSize(int size)
-{
-    this->size = size;
 }
 
 class FilePacketDescriptor : public omnetpp::cClassDescriptor
@@ -320,7 +293,7 @@ const char *FilePacketDescriptor::getProperty(const char *propertyname) const
 int FilePacketDescriptor::getFieldCount() const
 {
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
-    return basedesc ? 3+basedesc->getFieldCount() : 3;
+    return basedesc ? 1+basedesc->getFieldCount() : 1;
 }
 
 unsigned int FilePacketDescriptor::getFieldTypeFlags(int field) const
@@ -333,10 +306,8 @@ unsigned int FilePacketDescriptor::getFieldTypeFlags(int field) const
     }
     static unsigned int fieldTypeFlags[] = {
         FD_ISEDITABLE,
-        FD_ISEDITABLE,
-        FD_ISEDITABLE,
     };
-    return (field>=0 && field<3) ? fieldTypeFlags[field] : 0;
+    return (field>=0 && field<1) ? fieldTypeFlags[field] : 0;
 }
 
 const char *FilePacketDescriptor::getFieldName(int field) const
@@ -349,10 +320,8 @@ const char *FilePacketDescriptor::getFieldName(int field) const
     }
     static const char *fieldNames[] = {
         "seqNumber",
-        "fileName",
-        "size",
     };
-    return (field>=0 && field<3) ? fieldNames[field] : nullptr;
+    return (field>=0 && field<1) ? fieldNames[field] : nullptr;
 }
 
 int FilePacketDescriptor::findField(const char *fieldName) const
@@ -360,8 +329,6 @@ int FilePacketDescriptor::findField(const char *fieldName) const
     omnetpp::cClassDescriptor *basedesc = getBaseClassDescriptor();
     int base = basedesc ? basedesc->getFieldCount() : 0;
     if (fieldName[0]=='s' && strcmp(fieldName, "seqNumber")==0) return base+0;
-    if (fieldName[0]=='f' && strcmp(fieldName, "fileName")==0) return base+1;
-    if (fieldName[0]=='s' && strcmp(fieldName, "size")==0) return base+2;
     return basedesc ? basedesc->findField(fieldName) : -1;
 }
 
@@ -375,10 +342,8 @@ const char *FilePacketDescriptor::getFieldTypeString(int field) const
     }
     static const char *fieldTypeStrings[] = {
         "int",
-        "string",
-        "int",
     };
-    return (field>=0 && field<3) ? fieldTypeStrings[field] : nullptr;
+    return (field>=0 && field<1) ? fieldTypeStrings[field] : nullptr;
 }
 
 const char **FilePacketDescriptor::getFieldPropertyNames(int field) const
@@ -446,8 +411,6 @@ std::string FilePacketDescriptor::getFieldValueAsString(void *object, int field,
     FilePacket *pp = (FilePacket *)object; (void)pp;
     switch (field) {
         case 0: return long2string(pp->getSeqNumber());
-        case 1: return oppstring2string(pp->getFileName());
-        case 2: return long2string(pp->getSize());
         default: return "";
     }
 }
@@ -463,8 +426,6 @@ bool FilePacketDescriptor::setFieldValueAsString(void *object, int field, int i,
     FilePacket *pp = (FilePacket *)object; (void)pp;
     switch (field) {
         case 0: pp->setSeqNumber(string2long(value)); return true;
-        case 1: pp->setFileName((value)); return true;
-        case 2: pp->setSize(string2long(value)); return true;
         default: return false;
     }
 }

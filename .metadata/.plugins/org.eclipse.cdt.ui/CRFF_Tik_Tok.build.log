@@ -1,10 +1,5 @@
-04:43:28 **** Build of configuration release for project CRFF_Tik_Tok ****
-make MODE=release all 
-MSGC: tictoc13.msg
-MSGC: tictoc14.msg
-txc1.cc
-txc10.cc
-txc11.cc
+16:32:23 **** Build of configuration debug for project CRFF_Tik_Tok ****
+make MODE=debug all 
 txc12.cc
 txc13.cc
 txc14.cc
@@ -27,20 +22,7 @@ C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/
 #  define _OPPDEPRECATED __attribute((__deprecated__))
                                       ^
 2 warnings generated.
-txc15.cc
-txc16.cc
-txc16.cc:23:5: warning: 'cLongHistogram' is deprecated [-Wdeprecated-declarations]
-    cLongHistogram hopCountStats;
-    ^
-C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/clegacyhistogram.h:355:7: note: 'cLongHistogram' has been explicitly marked deprecated here
-class _OPPDEPRECATED SIM_API cLongHistogram : public cLegacyHistogram
-      ^
-C:/Users/Andrei/Desktop/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/platdep/platdefs.h:58:39: note: expanded from macro '_OPPDEPRECATED'
-#  define _OPPDEPRECATED __attribute((__deprecated__))
-                                      ^
-1 warning generated.
-txc17.cc
 Command canceled
 
-04:43:50 Build Cancelled. (took 21s.359ms)
+16:32:27 Build Cancelled. (took 4s.637ms)
 

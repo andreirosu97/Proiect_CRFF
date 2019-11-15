@@ -30,10 +30,13 @@ private:
     cMessage* getFileEv;
     cMessage* moreOffersTimeoutEv;
     cMessage* anyOffersTimeoutEv;
+    cMessage* fileReceivedCompletEv;
+    cMessage* fileSendCompletEv;
 
 
     FileRequest *lastFileReq;
     FileRequest *getFileReq;
+    FilePacket *lastFilePacketRec;
     File* file;
 
     int failTimes = 0;
@@ -42,7 +45,6 @@ private:
     const double propagationSpeed = 299792458.0;
     simtime_t radioDelay;
     double txRate;
-    cPar *pkLenBits;
     double x;
     double y;
 
@@ -60,6 +62,7 @@ protected:
     File* findFile(const char* fileName);
     void fixFileName();
     void requestNewFile();
+    void storeFileFromPacket(FilePacket *packet);
 };
 
 Define_Module(Host);
@@ -82,14 +85,13 @@ void Host::initialize()
     double dist = std::sqrt((x-serverX) * (x-serverX) + (y-serverY) * (y-serverY));
     radioDelay = dist / propagationSpeed;
 
-    if(getParentModule()->getIndex() == 0)
+    if(getParentModule()->getIndex() == 0 ||getParentModule()->getIndex() == 1)
         requestNewFile();
+
 }
 
 void Host::handleMessage(cMessage *msg)
 {
-    char msgname[20];
-    char fileName[20];
     switch(msg->getKind())
     {
     case SEND_FILE_REQUEST_EVENT:
@@ -153,12 +155,12 @@ void Host::handleMessage(cMessage *msg)
                 EV << "Akg from server ----> Changing state of host["<< getParentModule()->getIndex() <<"] to SELECTING\n";
                 cancelEvent(fileReqTimeoutEv);
                 state = SELECTING;
-                requestModule == nullptr;
+                requestModule = nullptr;
                 scheduleAt(simTime() + WAIT_FOR_OFFERS_TIMEOUT, anyOffersTimeoutEv);
             }
             break;
         }
-    case NO_OFFER_RECIEVED_EVENT:
+    case NO_OFFER_RECEIVED_EVENT:
         {
             ASSERT(state == SELECTING);
             state = REQUESTING;
@@ -194,7 +196,7 @@ void Host::handleMessage(cMessage *msg)
                     requestModule = destModule;
                     transferTime = totalTime;
                     getFileReq = message;
-                    scheduleAt(simTime() + WAIT_FOR_MORE_OFFERS_TIMEOUT, generateMessage(RECIEVE_FILE_REQUEST_EVENT));
+                    scheduleAt(simTime() + WAIT_FOR_MORE_OFFERS_TIMEOUT, generateMessage(RECEIVE_FILE_REQUEST_EVENT));
                 }
                 else if (transferTime > totalTime) //Better file source found rejecting old one
                 {
@@ -202,7 +204,6 @@ void Host::handleMessage(cMessage *msg)
                     FileRequest *rejectOffer = (FileRequest *)getFileReq->dup();
                     rejectOffer->setName("Reject offer");
                     rejectOffer->setKind(REJECT_OFFER);
-                    sendDirect(rejectOffer, radioDelay, 0, destModule->gate("in"));
                     sendDirect(rejectOffer, transferTime - duration, 0, requestModule->gate("in"));
                     getFileReq = message;
                     requestModule = destModule;
@@ -218,6 +219,13 @@ void Host::handleMessage(cMessage *msg)
             }
             break;
         }
+    case REJECT_OFFER:
+        {
+            state = IDLE;
+            cancelEvent(moreOffersTimeoutEv);
+            EV << "Reject Offer ----> Changing state of host["<< getParentModule()->getIndex() <<"] to IDLE\n";
+            break;
+        }
     case SEND_FILE_REQUEST_TIME_OUT: //Server did not respond sending again.
         {
             ASSERT(state == REQUESTING);
@@ -226,32 +234,57 @@ void Host::handleMessage(cMessage *msg)
             break;
         }
 
-    case RECIEVE_FILE_REQUEST_EVENT:
+    case RECEIVE_FILE_REQUEST_EVENT:
         {
-            ASSERT(state = SELLECTING);
+            ASSERT(state = SELECTING);
             state = RECEIVING;
             EV << "Self event ----> Found best host[" << requestModule->getParentModule()->getIndex() << "]\n";
             EV << "Self event ----> Changing state of host["<< getParentModule()->getIndex() <<"] to RECEIVING\n";
             FileRequest *sendFileReq = (FileRequest *)getFileReq->dup();
             sendFileReq->setName("Send file");
-            sendFileReq->setKind(RECIEVE_FILE_REQUEST);
+            sendFileReq->setKind(RECEIVE_FILE_REQUEST);
             simtime_t duration = getFileReq->getFileSize() / getFileReq->getTxRate();
             sendDirect(sendFileReq, transferTime - duration, 0, requestModule->gate("in"));
             break;
         }
-    case RECIEVE_FILE_REQUEST:
+    case RECEIVE_FILE_REQUEST:
         {
             state = TRANSMITING;
-            EV << "Send file ----> Changing state of host["<< getParentModule()->getIndex() <<"] to TRANSMITING\n";
+            EV << "Sending file ----> Changing state of host["<< getParentModule()->getIndex() <<"] to TRANSMITING\n";
             cancelEvent(moreOffersTimeoutEv);
-            //TODO sent the file
+            FileRequest *recvFileReq = (FileRequest *)msg->dup();
+            FilePacket *filePacket = new FilePacket(recvFileReq->getFileName());
+            filePacket->setBitLength(recvFileReq->getFileSize());
+            filePacket->setKind(FILE_PACKAGE);
+            simtime_t duration = filePacket->getBitLength() / txRate;
+            sendDirect(filePacket, radioDelay, duration, recvFileReq->getSenderModule()->gate("in"));
+            scheduleAt(simTime() + duration, fileSendCompletEv);
             break;
         }
-    case REJECT_OFFER:
+    case FILE_PACKAGE_SENT:
         {
+            ASSERT(state = TRANSMITING);
+            EV << "Send complete ----> Changing state of host["<< getParentModule()->getIndex() <<"] to IDLE\n";
             state = IDLE;
-            cancelEvent(moreOffersTimeoutEv);
-            EV << "Reject Offer ----> Changing state of host["<< getParentModule()->getIndex() <<"] to IDLE\n";
+            break;
+        }
+    case FILE_PACKAGE:
+        {
+            ASSERT(state = RECEIVING);
+            FilePacket *filePacket = check_and_cast<FilePacket *>(msg);
+            ASSERT(filePacket->isReceptionStart());
+            lastFilePacketRec = filePacket->dup();
+            simtime_t endReceptionTime = simTime() + filePacket->getDuration();
+            scheduleAt(endReceptionTime, fileReceivedCompletEv);
+            break;
+        }
+    case FILE_PACKAGE_RECEIVED:
+        {
+            ASSERT(state = RECEIVING);
+            storeFileFromPacket(lastFilePacketRec);
+            EV << "Packet fully received ----> Changing state of host["<< getParentModule()->getIndex() <<"] to IDLE\n";
+            state = IDLE;
+            requestNewFile();
             break;
         }
     default:
@@ -270,7 +303,10 @@ cMessage* Host::generateMessage(int msgType)
         {
             char msgname[20];
             char fileName[20];
-            sprintf(fileName, "file%d.dll",intuniform(0,20));
+            do{
+                    sprintf(fileName, "file%d.dll",intuniform(0,20));
+            }while(findFile(fileName) != nullptr);
+
             sprintf(msgname, "Request for %s", fileName);
             FileRequest *fileReqMessage = new FileRequest(msgname);
             fileReqMessage->setSourceAddress(getParentModule()->getIndex());
@@ -281,7 +317,7 @@ cMessage* Host::generateMessage(int msgType)
         }
         case SEND_FILE_REQUEST_EVENT: return fileReqEv;
         case SEND_FILE_REQUEST_TIME_OUT : return fileReqTimeoutEv;
-        case RECIEVE_FILE_REQUEST_EVENT : return getFileEv;
+        case RECEIVE_FILE_REQUEST_EVENT : return getFileEv;
         default : return nullptr;
     }
 }
@@ -292,7 +328,7 @@ File* Host::findFile(const char* fileName)
     for(int i = 0; i < getParentModule()->par("maxNumFiles").intValue(); i++)
     {
         file = (File*)getParentModule()->getSubmodule("files",i);
-        if (file->getName() == std::string(fileName))
+        if (file->getFileName() == std::string(fileName))
         {
             EV << "I HAVE IT !\n";
             return file;
@@ -311,9 +347,11 @@ Host::Host()
 {
     fileReqEv = new cMessage("requestEvent",SEND_FILE_REQUEST_EVENT);
     fileReqTimeoutEv = new cMessage("Send Request Timeout",SEND_FILE_REQUEST_TIME_OUT);
-    getFileEv = new cMessage("getEvent", RECIEVE_FILE_REQUEST_EVENT);
+    getFileEv = new cMessage("getEvent", RECEIVE_FILE_REQUEST_EVENT);
     moreOffersTimeoutEv = new cMessage("offerTimeOut", REJECT_OFFER);
-    anyOffersTimeoutEv = new cMessage("offerTimeOut", NO_OFFER_RECIEVED_EVENT);
+    anyOffersTimeoutEv = new cMessage("offerTimeOut", NO_OFFER_RECEIVED_EVENT);
+    fileReceivedCompletEv = new cMessage("file fully received",FILE_PACKAGE_RECEIVED);
+    fileSendCompletEv = new cMessage("file fully sent",FILE_PACKAGE_SENT);
     lastFileReq = nullptr;
     requestModule = nullptr;
 }
@@ -325,6 +363,8 @@ Host::~Host()
     cancelAndDelete(getFileEv);
     cancelAndDelete(moreOffersTimeoutEv);
     cancelAndDelete(anyOffersTimeoutEv);
+    cancelAndDelete(fileReceivedCompletEv);
+    cancelAndDelete(fileSendCompletEv);
 }
 
 void Host::fixFileName()
@@ -341,7 +381,7 @@ void Host::fixFileName()
             for(int j = i+1; j < getParentModule()->par("maxNumFiles").intValue(); j++)
             {
                 file2 = (File*)getParentModule()->getSubmodule("files",j);
-                if (file1->getName() == file2->getName())
+                if (file1->getFileName() == file2->getFileName())
                 {
                     file2->setNameAndSeq(file2->getSeqNum()+1);
                     toBeFixed = true;
@@ -354,9 +394,13 @@ void Host::fixFileName()
 
 void Host::requestNewFile()
 {
-    //TODO File to be something not in the host
     lastFileReq = nullptr;
     scheduleAt(getNextTransmissionTime(),generateMessage(SEND_FILE_REQUEST_EVENT));
+}
+
+void Host::storeFileFromPacket(FilePacket *packet)
+{
+    //TODO Store packet
 }
 
 

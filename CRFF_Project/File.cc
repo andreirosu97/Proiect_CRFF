@@ -23,7 +23,7 @@ void File::handleMessage(cMessage *msg)
     EV << "ERROR I SHOULD NOT RECIEVE A MESSAGE \n";
 }
 
-string File::getName() {
+string File::getFileName() {
     return name->stdstringValue();
 }
 

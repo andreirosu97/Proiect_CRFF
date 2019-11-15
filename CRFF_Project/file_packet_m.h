@@ -24,8 +24,6 @@
  * packet FilePacket
  * {
  *     int seqNumber;
- *     string fileName;
- *     int size;
  * }
  * </pre>
  */
@@ -33,8 +31,6 @@ class FilePacket : public ::omnetpp::cPacket
 {
   protected:
     int seqNumber;
-    ::omnetpp::opp_string fileName;
-    int size;
 
   private:
     void copy(const FilePacket& other);
@@ -55,10 +51,6 @@ class FilePacket : public ::omnetpp::cPacket
     // field getter/setter methods
     virtual int getSeqNumber() const;
     virtual void setSeqNumber(int seqNumber);
-    virtual const char * getFileName() const;
-    virtual void setFileName(const char * fileName);
-    virtual int getSize() const;
-    virtual void setSize(int size);
 };
 
 inline void doParsimPacking(omnetpp::cCommBuffer *b, const FilePacket& obj) {obj.parsimPack(b);}

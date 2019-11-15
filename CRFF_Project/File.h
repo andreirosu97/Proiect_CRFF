@@ -21,7 +21,7 @@ protected:
     virtual void initialize() override;
     virtual void handleMessage(cMessage *msg) override;
 public:
-    string getName();
+    string getFileName();
     int getSize();
     int getSeqNum();
     void setNameAndSeq(int seqNum);

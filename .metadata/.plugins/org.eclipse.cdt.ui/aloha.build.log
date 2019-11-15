@@ -1,6 +1,6 @@
-04:42:07 **** Clean-only build of configuration release for project aloha ****
-make MODE=release clean 
-Cleaning aloha.exe
+17:14:29 **** Incremental Build of configuration release for project aloha ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
 
-04:42:08 Build Finished. 0 errors, 0 warnings. (took 770ms)
+17:14:30 Build Finished. 0 errors, 0 warnings. (took 201ms)
 

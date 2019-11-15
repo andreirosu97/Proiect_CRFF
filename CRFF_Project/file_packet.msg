@@ -16,6 +16,4 @@
 packet FilePacket
 {
     int seqNumber;
-    string fileName;
-    int size;
 }
