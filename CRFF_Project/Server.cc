@@ -9,7 +9,7 @@
 #include <omnetpp.h>
 #include "Globals.h"
 
-#define BOARDCAST_START_DELAY 5
+#define BOARDCAST_START_DELAY 1
 
 using namespace omnetpp;
 

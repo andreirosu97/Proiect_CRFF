@@ -452,3 +452,87 @@ Creating executable: out/clang-release//CRFF_Project.exe
 make MODE=release all 
 Server.cc
 Creating executable: out/clang-release//CRFF_Project.exe
+14:37:37 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+MSGC: file_packet.msg
+Host.cc
+Server.cc
+file_packet_m.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+14:38:43 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+14:39:23 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+14:40:43 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+14:41:20 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+14:43:31 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+14:45:26 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+14:47:48 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+14:49:41 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:156:31: warning: equality comparison result unused [-Wunused-comparison]
+                requestModule == nullptr;
+                ~~~~~~~~~~~~~~^~~~~~~~~~
+Host.cc:156:31: note: use '=' to turn this equality comparison into an assignment
+                requestModule == nullptr;
+                              ^~
+                              =
+1 warning generated.
+Creating executable: out/clang-release//CRFF_Project.exe
+14:49:52 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+14:51:59 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:156:31: warning: equality comparison result unused [-Wunused-comparison]
+                requestModule == nullptr;
+                ~~~~~~~~~~~~~~^~~~~~~~~~
+Host.cc:156:31: note: use '=' to turn this equality comparison into an assignment
+                requestModule == nullptr;
+                              ^~
+                              =
+1 warning generated.
+Creating executable: out/clang-release//CRFF_Project.exe
+14:52:45 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+14:53:25 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:156:31: warning: equality comparison result unused [-Wunused-comparison]
+                requestModule == nullptr;
+                ~~~~~~~~~~~~~~^~~~~~~~~~
+Host.cc:156:31: note: use '=' to turn this equality comparison into an assignment
+                requestModule == nullptr;
+                              ^~
+                              =
+1 warning generated.
+Creating executable: out/clang-release//CRFF_Project.exe
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Project.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:97: out/clang-release//CRFF_Project.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+14:53:33 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Project.exe
