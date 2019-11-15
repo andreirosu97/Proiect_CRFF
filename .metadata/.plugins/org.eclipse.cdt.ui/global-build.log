@@ -99,3 +99,179 @@ make: Nothing to be done for 'all'.
 make MODE=release all 
 Host.cc
 Creating executable: out/clang-release//CRFF_Project.exe
+10:37:19 **** Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+File.cc
+Host.cc
+Server.cc
+file_m.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+10:38:33 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:02:52 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:05:57 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:07:21 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:08:42 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:08:55 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:09:51 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:10:54 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:13:41 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:14:59 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:23:02 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:23:03 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:25:08 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:26:19 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:27:49 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:115:45: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                    message->setName(strcat("Offering for ",fileName));
+                                            ^
+1 warning generated.
+Creating executable: out/clang-release//CRFF_Project.exe
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Project.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+11:29:54 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:117:38: error: no matching function for call to 'to_string'
+                    message->setName(std::to_string(newFileName));
+                                     ^~~~~~~~~~~~~~
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6212:3: note: candidate function not viable: no known conversion from 'char *' to 'int' for 1st argument; dereference the argument with *
+  to_string(int __val)
+  ^
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6217:3: note: candidate function not viable: no known conversion from 'char *' to 'unsigned int' for 1st argument; dereference the argument with *
+  to_string(unsigned __val)
+  ^
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6223:3: note: candidate function not viable: no known conversion from 'char *' to 'long' for 1st argument; dereference the argument with *
+  to_string(long __val)
+  ^
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6228:3: note: candidate function not viable: no known conversion from 'char *' to 'unsigned long' for 1st argument; dereference the argument with *
+  to_string(unsigned long __val)
+  ^
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6234:3: note: candidate function not viable: no known conversion from 'char *' to 'long long' for 1st argument; dereference the argument with *
+  to_string(long long __val)
+  ^
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6240:3: note: candidate function not viable: no known conversion from 'char *' to 'unsigned long long' for 1st argument; dereference the argument with *
+  to_string(unsigned long long __val)
+  ^
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6246:3: note: candidate function not viable: no known conversion from 'char *' to 'float' for 1st argument; dereference the argument with *
+  to_string(float __val)
+  ^
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6255:3: note: candidate function not viable: no known conversion from 'char *' to 'double' for 1st argument; dereference the argument with *
+  to_string(double __val)
+  ^
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\include\c++\7.1.0\bits/basic_string.h:6264:3: note: candidate function not viable: no known conversion from 'char *' to 'long double' for 1st argument; dereference the argument with *
+  to_string(long double __val)
+  ^
+1 error generated.
+make: *** [Makefile:105: out/clang-release//Host.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+11:30:15 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:117:38: error: cannot initialize a parameter of type 'const char *' with an rvalue of type 'std::__cxx11::string *' (aka 'basic_string<char> *')
+                    message->setName(new string(newFileName));
+                                     ^~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cnamedobject.h:111:38: note: passing argument to parameter 's' here
+    virtual void setName(const char *s);
+                                     ^
+1 error generated.
+make: *** [Makefile:105: out/clang-release//Host.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+11:31:01 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Host.cc:117:38: error: cannot initialize a parameter of type 'const char *' with an rvalue of type 'std::string *' (aka 'basic_string<char> *')
+                    message->setName(new std::string(newFileName));
+                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/andrei.rosu/Desktop/Stuff/2.Personal/omnetpp-5.5.1-src-windows/omnetpp-5.5.1/include/omnetpp/cnamedobject.h:111:38: note: passing argument to parameter 's' here
+    virtual void setName(const char *s);
+                                     ^
+1 error generated.
+make: *** [Makefile:105: out/clang-release//Host.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+11:31:23 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+C:\Users\andrei.rosu\Desktop\Stuff\2.Personal\omnetpp-5.5.1-src-windows\omnetpp-5.5.1\tools\win64\mingw64\bin\ld: cannot open output file out/clang-release//CRFF_Project.exe: Permission denied
+clang++.exe: error: unable to remove file: Permission denied
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+make: *** [Makefile:96: out/clang-release//CRFF_Project.exe] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+11:31:32 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Creating executable: out/clang-release//CRFF_Project.exe
+11:32:13 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:33:19 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:38:21 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:39:23 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:41:03 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:44:49 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:46:21 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+11:48:19 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
