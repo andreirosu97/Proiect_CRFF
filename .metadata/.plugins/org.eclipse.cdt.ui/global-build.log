@@ -275,3 +275,180 @@ Creating executable: out/clang-release//CRFF_Project.exe
 make MODE=release all 
 Host.cc
 Creating executable: out/clang-release//CRFF_Project.exe
+11:49:41 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+11:54:40 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+12:01:11 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Server.cc
+Server.cc:59:73: error: member reference type 'int' is not a pointer
+        sendDirect(akgMessage, radioDelay, 0, msg->getSenderModuleId()->gate("in"));
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~  ^
+Server.cc:59:32: error: use of undeclared identifier 'radioDelay'
+        sendDirect(akgMessage, radioDelay, 0, msg->getSenderModuleId()->gate("in"));
+                               ^
+Server.cc:60:32: error: expected ')'
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                               ^
+Server.cc:14:33: note: expanded from macro 'BOARDCAST_START_DELAY'
+#define BOARDCAST_START_DELAY 10;
+                                ^
+Server.cc:60:19: note: to match this '('
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                  ^
+Server.cc:60:53: error: expected expression
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                                                    ^
+4 errors generated.
+make: *** [Makefile:105: out/clang-release//Server.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:01:37 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Server.cc:59:71: error: member reference base type 'int' is not a structure or union
+        sendDirect(akgMessage, radioDelay, 0, msg->getSenderModuleId().gate("in"));
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+Server.cc:59:32: error: use of undeclared identifier 'radioDelay'
+        sendDirect(akgMessage, radioDelay, 0, msg->getSenderModuleId().gate("in"));
+                               ^
+Server.cc:60:32: error: expected ')'
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                               ^
+Server.cc:14:33: note: expanded from macro 'BOARDCAST_START_DELAY'
+#define BOARDCAST_START_DELAY 10;
+                                ^
+Server.cc:60:19: note: to match this '('
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                  ^
+Server.cc:60:53: error: expected expression
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                                                    ^
+4 errors generated.
+make: *** [Makefile:105: out/clang-release//Server.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:02:00 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Server.cc:59:32: error: use of undeclared identifier 'radioDelay'
+        sendDirect(akgMessage, radioDelay, 0, msg->getSenderModule()->gate("in"));
+                               ^
+Server.cc:60:32: error: expected ')'
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                               ^
+Server.cc:14:33: note: expanded from macro 'BOARDCAST_START_DELAY'
+#define BOARDCAST_START_DELAY 10;
+                                ^
+Server.cc:60:19: note: to match this '('
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                  ^
+Server.cc:60:53: error: expected expression
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                                                    ^
+3 errors generated.
+make: *** [Makefile:105: out/clang-release//Server.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:03:13 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Server.cc:67:32: error: expected ')'
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                               ^
+Server.cc:14:33: note: expanded from macro 'BOARDCAST_START_DELAY'
+#define BOARDCAST_START_DELAY 10;
+                                ^
+Server.cc:67:19: note: to match this '('
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                  ^
+Server.cc:67:53: error: expected expression
+        scheduleAt(simTime() + BOARDCAST_START_DELAY, broadcastStart);
+                                                    ^
+2 errors generated.
+make: *** [Makefile:105: out/clang-release//Server.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:03:34 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Server.cc:67:30: error: expected ')'
+        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
+                             ^
+Server.cc:14:33: note: expanded from macro 'BOARDCAST_START_DELAY'
+#define BOARDCAST_START_DELAY 10;
+                                ^
+Server.cc:67:19: note: to match this '('
+        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
+                  ^
+Server.cc:67:51: error: expected expression
+        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
+                                                  ^
+2 errors generated.
+make: *** [Makefile:105: out/clang-release//Server.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:03:45 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Server.cc:67:30: error: expected ')'
+        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
+                             ^
+Server.cc:11:33: note: expanded from macro 'BOARDCAST_START_DELAY'
+#define BOARDCAST_START_DELAY 10;
+                                ^
+Server.cc:67:19: note: to match this '('
+        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
+                  ^
+Server.cc:67:51: error: expected expression
+        scheduleAt(simTime()+BOARDCAST_START_DELAY, broadcastStart);
+                                                  ^
+2 errors generated.
+make: *** [Makefile:105: out/clang-release//Server.o] Error 1
+"make MODE=release all" terminated with exit code 2. Build might be incomplete.
+12:04:14 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+12:04:23 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+12:06:54 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Host.cc
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+12:07:38 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+12:08:26 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+12:08:43 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+12:09:32 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+12:09:59 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+make: Nothing to be done for 'all'.
+12:10:33 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+12:10:53 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+12:13:58 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe
+12:14:52 **** Incremental Build of configuration release for project CRFF_Project ****
+make MODE=release all 
+Server.cc
+Creating executable: out/clang-release//CRFF_Project.exe

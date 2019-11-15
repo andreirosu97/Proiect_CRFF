@@ -64,6 +64,7 @@ void Host::initialize()
     server = getModuleByPath("server");
     requestInterval = par("requestInterval");
     state = IDLE;
+    gate("in")->setDeliverOnReceptionStart(true);
 
     txRate = par("txRate");
     fixFileName();
@@ -118,7 +119,7 @@ void Host::handleMessage(cMessage *msg)
                 file = findFile(fileName);
                 if (file != nullptr) // if file was found
                 {
-                    EV << "Changing state of host["<< getParentModule()->getIndex() <<"] to OFFERING\n";
+                    EV << "Request for file ----> Changing state of host["<< getParentModule()->getIndex() <<"] to OFFERING\n";
                     state = OFFERING;
                     char newFileName[20];
                     sprintf(newFileName, "Offering for %s", fileName);
@@ -142,7 +143,7 @@ void Host::handleMessage(cMessage *msg)
         {
             if (state == REQUESTING)
             {
-                EV << "Changing state of host["<< getParentModule()->getIndex() <<"] to SELECTING\n";
+                EV << "Akg from server ----> Changing state of host["<< getParentModule()->getIndex() <<"] to SELECTING\n";
                 cancelEvent(fileReqTimeoutEv);
                 state = SELECTING;
                 lastFileReq = nullptr;
@@ -204,7 +205,8 @@ void Host::handleMessage(cMessage *msg)
         {
             ASSERT(state = SELLECTING);
             state = RECEIVING;
-            EV << "Found best source : " << requestModule->getParentModule()->getIndex() << "\n";
+            EV << "Self event ----> Found best host[" << requestModule->getParentModule()->getIndex() << "]\n";
+            EV << "Self event ----> Changing state of host["<< getParentModule()->getIndex() <<"] to RECEIVING\n";
             FileRequest *sendFileReq = (FileRequest *)getFileReq->dup();
             sendFileReq->setName("Send file");
             sendFileReq->setKind(RECIEVE_FILE_REQUEST);
