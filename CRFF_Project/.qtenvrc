@@ -3,7 +3,7 @@ last-configname=Big_Number_of_Hosts_small_variation_of_files
 last-runnumber=0
 
 [RunModeProfiles]
-run-playback-speed=4.466835921509632
+run-playback-speed=1
 run-min-playback-speed=0.01
 run-max-playback-speed=100
 run-min-animation-speed=nan

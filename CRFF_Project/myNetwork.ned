@@ -28,7 +28,7 @@ simple Host
         double x @unit(m);                  // the x coordinate of the host
         double y @unit(m);                  // the y coordinate of the host
         double requestInterval @unit(s);
-        int end;
+        int end = default(20);
     gates:
         input in @directIn;
 }

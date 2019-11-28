@@ -289,8 +289,10 @@ void Host::handleMessage(cMessage *msg)
             requestNewFile();
             break;
         }
+    case END_TRANSM:
     default:
         {
+            EV << "NO FILES NEEDED, ENDING TRANSMISION";
             return;
         }
     }
@@ -305,9 +307,17 @@ cMessage* Host::generateMessage(int msgType)
         {
             char msgname[20];
             char fileName[20];
+            int timeOutSearch = par("end").intValue()*5;
             do{
                     sprintf(fileName, "file%d.dll",intuniform(0,par("end")));
-            }while(findFile(fileName) != nullptr);
+            }while(findFile(fileName) != nullptr && --timeOutSearch);
+
+            if (timeOutSearch == 0)
+            {
+                cMessage *msg = new cMessage("endTrans");
+                msg->setKind(END_TRANSM);
+                return msg;
+            }
 
             sprintf(msgname, "Request for %s", fileName);
             FileRequest *fileReqMessage = new FileRequest(msgname);
@@ -372,31 +382,32 @@ void Host::fixFileName()
 {
     File *file1 = nullptr;
     File *file2 = nullptr;
-    bool toBeFixed = false;
-    do
+
+    int maxFiles = par("end").intValue()/2;
+    for(int i = 0; i < getParentModule()->par("maxNumFiles").intValue() -1 ; i++)
     {
-        toBeFixed = false;
-        for(int i = 0; i < getParentModule()->par("maxNumFiles").intValue() -1 ; i++)
+        file1 = (File*)getParentModule()->getSubmodule("files",i);
+        for(int j = i+1; j < getParentModule()->par("maxNumFiles").intValue(); j++)
         {
-            file1 = (File*)getParentModule()->getSubmodule("files",i);
-            for(int j = i+1; j < getParentModule()->par("maxNumFiles").intValue(); j++)
+            file2 = (File*)getParentModule()->getSubmodule("files",j);
+            if (file1->getFileName() == file2->getFileName())
             {
-                file2 = (File*)getParentModule()->getSubmodule("files",j);
-                if (file1->getFileName() == file2->getFileName())
-                {
-                    file2->setNameAndSeq(file2->getSeqNum()+1);
-                    toBeFixed = true;
-                }
+                file2->deleteFile();
+                maxFiles--;
             }
         }
     }
-    while(toBeFixed);
 
-    for(int i = 0; i < getParentModule()->par("maxNumFiles").intValue()/2 ; i++)
+    for(int i = 0; i < getParentModule()->par("maxNumFiles").intValue() && maxFiles > 0 ; i++)
     {
         file1 = (File*)getParentModule()->getSubmodule("files",i);
-        file1->deleteFile();
+        if (file1->getFileName() != "N/A")
+        {
+            file1->deleteFile();
+            maxFiles--;
+        }
     }
+
 
 }
 
